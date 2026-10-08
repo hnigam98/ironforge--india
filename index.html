@@ -1,0 +1,1683 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#09090b">
+<title>IRONFORGE INDIA — Complete Powerlifting Platform</title>
+<style>
+:root{--bg:#09090b;--panel:#111113;--panel2:#18181b;--line:#2f2f35;--gold:#facc15;--gold2:#eab308;--text:#fafafa;--muted:#a1a1aa;--danger:#f87171;--ok:#86efac}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#29200a 0,#09090b 28%);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+button,input,select,textarea{font:inherit}button{cursor:pointer}
+a{color:inherit;text-decoration:none}.wrap{width:min(1180px,calc(100% - 28px));margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(9,9,11,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:950;letter-spacing:.08em}.brand span{color:var(--gold)}
+nav{display:flex;gap:6px;flex-wrap:wrap;justify-content:flex-end}nav button{border:0;background:transparent;color:#d4d4d8;padding:9px 11px;border-radius:9px}nav button:hover,nav button.active{background:#27272a;color:#fff}
+.hero{padding:76px 0 70px;min-height:560px;display:flex;align-items:center}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:38px;align-items:center}.eyebrow{color:var(--gold);font-size:12px;font-weight:900;letter-spacing:.15em;text-transform:uppercase}
+h1{font-size:clamp(42px,6vw,78px);line-height:.98;margin:14px 0 20px;letter-spacing:-.055em}h2{font-size:clamp(28px,4vw,42px);margin:0 0 12px}h3{margin:0 0 8px}.lead{font-size:18px;color:#d4d4d8;max-width:700px}.muted{color:var(--muted)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}.btn{border:1px solid var(--line);background:#18181b;color:#fff;border-radius:10px;padding:12px 16px;font-weight:800}.btn.primary{background:var(--gold);color:#09090b;border-color:var(--gold)}.btn:hover{transform:translateY(-1px)}
+.engine{background:linear-gradient(145deg,#17130a,#111113);border:1px solid #4a3a0b;border-radius:22px;padding:22px;box-shadow:0 20px 60px #0008}.engine-row{display:flex;justify-content:space-between;padding:13px 0;border-bottom:1px solid #29251a}.engine-row:last-child{border:0}.engine b{color:var(--gold)}
+section.page{display:none;padding:54px 0 80px}#home{padding-bottom:20px}#home .home-section{margin-top:52px}#home .wide-card{min-height:180px}#home .home-cta{margin-top:54px;padding:34px;border:1px solid #4a3a0b;border-radius:20px;background:linear-gradient(135deg,#191506,#111113)}.page.show{display:block}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{background:rgba(17,17,19,.92);border:1px solid var(--line);border-radius:17px;padding:20px}.card:hover{border-color:#52525b}.feature-icon{font-size:28px;margin-bottom:12px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:25px 0}.stat{background:#111113;border:1px solid var(--line);padding:18px;border-radius:14px}.stat strong{display:block;font-size:26px}.price{font-size:38px;font-weight:950;margin:12px 0;color:var(--gold)}.price small{font-size:14px;color:var(--muted)}
+.price-card{display:flex;flex-direction:column;min-height:285px}.price-card .spacer{flex:1}.elite{border-color:#8b6d00;background:linear-gradient(145deg,#191506,#111113)}
+label{display:block;font-size:13px;font-weight:800;margin-bottom:6px;color:#d4d4d8}.field{margin:12px 0}input,select,textarea{width:100%;background:#09090b;border:1px solid #3f3f46;color:#fff;border-radius:9px;padding:12px;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--gold)}textarea{min-height:100px;resize:vertical}
+.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:4px 14px}.full{grid-column:1/-1}.notice{background:#17130a;border:1px solid #4a3a0b;color:#fde68a;border-radius:12px;padding:13px;margin:14px 0}.success{background:#0b1710;border-color:#244c30;color:#bbf7d0}
+.output{margin-top:18px;background:#09090b;border:1px solid #3f3f46;border-radius:14px;padding:18px;white-space:pre-wrap;line-height:1.65;min-height:100px}.empty{color:#71717a}
+.chat{height:390px;overflow:auto;background:#050506;border:1px solid #27272a;border-radius:14px;padding:13px}.bubble{padding:11px 13px;border-radius:12px;margin:8px 0;white-space:pre-wrap;max-width:90%}.user{background:#27272a;margin-left:auto}.bot{background:#18181b;border:1px solid #3f3f46}.chatrow{display:flex;gap:8px;margin-top:10px}.chatrow input{flex:1}
+.video-box{border:1px dashed #52525b;border-radius:14px;padding:30px;text-align:center}.video-preview{width:100%;max-height:430px;margin-top:14px;border-radius:12px;background:#000}
+.dashboard-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}.dashboard-tabs button{border:1px solid var(--line);background:#18181b;color:#fff;padding:10px 13px;border-radius:9px}.dashboard-tabs button:hover{border-color:var(--gold)}
+footer{border-top:1px solid var(--line);padding:30px 0;color:#71717a}
+.hidden{display:none!important}.small{font-size:12px}
+@media(max-width:850px){.hero{min-height:auto;display:block}.hero-grid,.grid2{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.stats{grid-template-columns:repeat(2,1fr)}nav{display:none}.nav:after{content:"Use the buttons below";color:#71717a;font-size:12px}.hero{padding-top:45px}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}}
+@media(max-width:520px){.wrap{width:min(100% - 20px,1180px)}.grid,.stats{grid-template-columns:1fr}.hero h1{font-size:45px}.card{padding:16px}.actions .btn{width:100%}.nav{height:62px}.brand{font-size:13px}}
+</style>
+
+<style id="IRONFORGE_V7_STYLE">
+.dashboard-hub{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:18px}
+.dashboard-option{min-height:235px;display:flex;flex-direction:column}
+.dashboard-option .spacer{flex:1}
+.dashboard-option .btn{margin-top:auto}
+.dashboard-icon{font-size:30px;margin-bottom:8px}
+.dash-intake{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.dash-intake .full{grid-column:1/-1}
+.dash-choice{background:#f5f5f5;color:#111;border:2px solid #f5f5f5;border-radius:12px;padding:13px;font-weight:800;text-align:left;cursor:pointer}
+.dash-choice:hover{border-color:#facc15}
+.dash-choice.active{border-color:#eab308;box-shadow:0 0 0 2px #eab30855}
+.plan-selected{background:#17130a;border:1px solid #80630a;color:#fde68a;border-radius:12px;padding:14px;margin:12px 0}
+#pricing .btn{min-width:160px}
+@media(max-width:850px){
+  .nav{height:auto;min-height:62px;padding:9px 0;align-items:flex-start}
+  nav{display:flex!important;overflow-x:auto;flex-wrap:nowrap;justify-content:flex-start;width:100%;padding-bottom:3px;scrollbar-width:none}
+  nav::-webkit-scrollbar{display:none}
+  nav button{flex:0 0 auto;white-space:nowrap;padding:9px 10px;font-size:13px}
+  .nav{flex-wrap:wrap}
+  .brand{flex:0 0 auto;width:100%}
+  .hero-grid{grid-template-columns:1fr}
+  .dashboard-hub{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .grid2{grid-template-columns:1fr}
+  .stats{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:560px){
+  .wrap{width:calc(100% - 18px)}
+  .hero{padding-top:32px}
+  .hero h1{font-size:42px}
+  .actions .btn{width:100%}
+  .dash-intake{grid-template-columns:1fr}
+  .dash-intake .full{grid-column:auto}
+  .stats{grid-template-columns:1fr 1fr}
+  section.page{padding-top:34px}
+  .price{font-size:32px}
+}
+</style>
+
+<style id="IRONFORGE_V8_STYLE">
+.if8-shell{max-width:1120px;margin:0 auto;padding:28px 18px}
+.if8-card{background:#101012;border:1px solid #2d2d32;border-radius:20px;padding:20px}
+.if8-eyebrow{color:#facc15;font-size:11px;font-weight:900;letter-spacing:.16em}
+.if8-muted{color:#aaa;line-height:1.6}
+.if8-module-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px;margin-top:16px}
+.if8-module{background:#111114;border:1px solid #303036;border-radius:18px;padding:19px;min-height:205px;display:flex;flex-direction:column}
+.if8-module-icon{font-size:30px;margin-bottom:8px}
+.if8-module h3{margin:0 0 7px}
+.if8-module p{flex:1}
+.if8-btn{background:#facc15;color:#111;border:0;border-radius:11px;padding:12px 15px;font-weight:900;cursor:pointer}
+.if8-btn:hover{background:#fde047}
+.if8-intake{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin:18px 0}
+.if8-intake label,.if8-field label{display:block;color:#ddd;font-size:12px;font-weight:800;margin-bottom:6px}
+.if8-intake select,.if8-field input,.if8-field select,.if8-field textarea{width:100%;box-sizing:border-box;background:#18181b;color:#fff;border:1px solid #37373d;border-radius:10px;padding:12px}
+.if8-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.if8-full{grid-column:1/-1}
+.if8-list{margin:0;padding-left:20px}
+.if8-list li{margin:8px 0;line-height:1.55}
+.if8-result{background:#0d0d0f;border:1px solid #33333a;border-radius:16px;padding:18px;margin-top:12px}
+.if8-result h3{margin-top:0;color:#facc15}
+.if8-coach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:15px}
+.if8-coach{background:#111114;border:1px solid #303036;border-radius:18px;padding:18px}
+.if8-coach.selected{border-color:#facc15;box-shadow:0 0 0 1px #facc15}
+.if8-coach .avatar{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#facc15;color:#111;font-weight:1000;margin-bottom:10px}
+.if8-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.if8-action{background:#f5f5f5;color:#111;border:0;border-radius:10px;padding:11px 14px;font-weight:800;cursor:pointer}
+.if8-action:hover{background:#facc15}
+.if8-match{font-size:12px;color:#facc15;font-weight:900}
+.if8-number-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.if8-number{background:#18181b;border:1px solid #303036;border-radius:13px;padding:13px;text-align:center}
+.if8-number b{display:block;font-size:22px;color:#fff;margin-top:5px}
+@media(max-width:850px){
+  .if8-module-grid{grid-template-columns:1fr}
+  .if8-coach-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .if8-shell{padding:20px 10px}
+  .if8-card{padding:15px}
+  .if8-intake,.if8-form-grid{grid-template-columns:1fr}
+  .if8-full{grid-column:auto}
+  .if8-number-grid{grid-template-columns:1fr 1fr 1fr}
+  .if8-btn,.if8-action{width:100%}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><div class="brand">IRONFORGE <span>INDIA</span></div><nav>
+<button onclick="showPage('home')">Home</button><button onclick="showPage('pricing')">Pricing</button><button onclick="showPage('coach')">Coach Assistant</button><button onclick="showPage('form')">Technique Review</button><button onclick="showPage('dashboard')">Dashboard</button>
+</nav></div></header>
+
+<main>
+<section id="home" class="page show">
+<div class="wrap hero"><div class="hero-grid"><div>
+<div id="siteAnnouncement" class="eyebrow">Engineered for Indian Strength Athletes</div>
+<h1 id="siteHeroTitle">Everything a lifter needs. One IronForge.</h1>
+<p id="siteHeroDescription" class="lead">Training, Indian nutrition, personal coaching support, form feedback and competition preparation in one responsive platform.</p>
+<div class="actions"><button class="btn" onclick="showPage('pricing')">Explore Plans</button><button class="btn" onclick="showPage('form')">Upload a Lift</button></div>
+<div class="stats"><div class="stat"><strong>24/7</strong><span class="muted">Support</span></div><div class="stat"><strong>RPE</strong><span class="muted">Aware</span></div><div class="stat"><strong>₹</strong><span class="muted">Budget-aware</span></div><div class="stat"><strong>SBD</strong><span class="muted">Focused</span></div></div>
+</div><div class="engine"><div class="eyebrow">IRONFORGE ENGINE</div><div class="engine-row"><span>Training</span><b>Adaptive</b></div><div class="engine-row"><span>Nutrition</span><b>Indian + Budget</b></div><div class="engine-row"><span>Form</span><b>Video Review</b></div><div class="engine-row"><span>Coach Assistant</span><b>Solutions</b></div><div class="engine-row"><span>Competition</span><b>Meet Prep</b></div></div></div></div>
+<div class="wrap home-section">
+  <div class="eyebrow">THE IRONFORGE SYSTEM</div>
+  <h2>Built around the way serious lifters actually train.</h2>
+  <p class="muted" style="max-width:760px">From your first profile to your next meet, IronForge keeps training, nutrition, technique and competition preparation connected instead of scattered across different apps.</p>
+  <div id="homeFeaturesGrid" class="grid">
+    <div class="card wide-card"><div class="feature-icon">🏋️</div><h3>Adaptive Training</h3><p class="muted">Sessions are built around your strength numbers, RPE, fatigue and progression. When a session runs harder than planned, the next exposure can be adjusted instead of blindly forcing the original load.</p></div>
+    <div class="card wide-card"><div class="feature-icon">🍛</div><h3>Desi Nutrition</h3><p class="muted">Practical Indian meals, food swaps and budget-aware planning. Tell the system what you normally eat and what you avoid, then build around your actual routine.</p><button class="btn" onclick="showPage('pricing')">See Nutrition Plans</button></div>
+    <div class="card wide-card"><div class="feature-icon">🎥</div><h3>Technique Review</h3><p class="muted">Upload a squat, bench or deadlift video and receive clear cues focused on setup, bar path, bracing, tempo and repeatability.</p><button class="btn" onclick="showPage('form')">Review a Lift</button></div>
+    <div class="card wide-card"><div class="feature-icon">💬</div><h3>Coach Assistant</h3><p class="muted">Ask about RPE, programming, nutrition, weak points or your next session in a simple conversation instead of searching through generic articles.</p><button class="btn" onclick="showPage('coach')">Start a Conversation</button></div>
+    <div class="card wide-card"><div class="feature-icon">🏆</div><h3>Meet Preparation</h3><p class="muted">Organize warm-ups, attempts, timing and meet-day decisions around the numbers you actually bring into competition.</p><button class="btn" onclick="showPage('dashboard')">Open Meet Prep</button></div>
+    <div class="card wide-card"><div class="feature-icon">📊</div><h3>Lifter Dashboard</h3><p class="muted">Keep your profile, training, nutrition and competition work together in one place for long-term progress.</p><button class="btn" onclick="showPage('dashboard')">Open Dashboard</button></div>
+  </div>
+</div>
+<div class="wrap home-section">
+  <div class="grid2">
+    <div class="card">
+      <div class="eyebrow">HOW IT WORKS</div>
+      <h3>1. Tell IronForge about your lifting</h3>
+      <p class="muted">Bodyweight, training days, SBD numbers, goals, diet preferences and budget.</p>
+      <h3>2. Get a practical starting point</h3>
+      <p class="muted">Your training, nutrition and competition guidance is organized around the information you provide.</p>
+      <h3>3. Keep improving</h3>
+      <p class="muted">Log performance, review technique and adjust the next step instead of starting from zero every time.</p>
+    </div>
+    <div class="card">
+      <div class="eyebrow">MADE FOR</div>
+      <h3>Beginners → Advanced Lifters</h3>
+      <p class="muted">Whether you're learning the SBD movements or preparing for another competition, the experience is designed to grow with your training.</p>
+      <div class="stats">
+        <div class="stat"><strong>SBD</strong><span class="muted">Strength focused</span></div>
+        <div class="stat"><strong>RPE</strong><span class="muted">Autoregulated</span></div>
+        <div class="stat"><strong>₹</strong><span class="muted">India aware</span></div>
+        <div class="stat"><strong>24/7</strong><span class="muted">Access</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrap home-section">
+  <div class="home-cta">
+    <div class="eyebrow">READY TO START?</div>
+    <h2>Your next block starts with better information.</h2>
+    <p class="muted">Create your profile, choose a one-time service, or review a lift. Start with what you need today and build from there.</p>
+    <div class="actions"><button class="btn" onclick="showPage('pricing')">View Pricing</button><button class="btn" onclick="showPage('form')">Review My Lift</button><a id="earlyAccessBtn" class="btn primary" href="#" target="_blank" rel="noopener" style="display:none">Join Early Access</a></div>
+  </div>
+</div>
+</section>
+
+<section id="pricing" class="page">
+<div class="wrap">
+  <div class="eyebrow">Choose your path</div>
+  <h2>Choose a plan before building your profile</h2>
+  <p class="muted">Select the package that fits your training level. After selecting a long-term plan, IRONFORGE unlocks your profile setup and personalized dashboard.</p>
+
+  <div id="planSelectionNotice"></div>
+  <div class="grid">
+    <div class="card price-card">
+      <h3>Beginner</h3>
+      <div class="price">₹299<small>/month</small></div>
+      <p class="muted">Structured beginner powerlifting program, nutrition guidance and dashboard access.</p>
+      <div class="spacer"></div>
+      <button class="btn primary" onclick="selectPlan('Beginner','₹299/month')">Choose Beginner</button>
+    </div>
+
+    <div class="card price-card">
+      <h3>Intermediate</h3>
+      <div class="price">₹599<small>/month</small></div>
+      <p class="muted">More structured progression, personalized training and nutrition support.</p>
+      <div class="spacer"></div>
+      <button class="btn primary" onclick="selectPlan('Intermediate','₹599/month')">Choose Intermediate</button>
+    </div>
+
+    <div class="card price-card">
+      <h3>Advanced</h3>
+      <div class="price">₹999<small>/month</small></div>
+      <p class="muted">Advanced strength programming, weak-point work and competition-focused planning.</p>
+      <div class="spacer"></div>
+      <button class="btn primary" onclick="selectPlan('Advanced','₹999/month')">Choose Advanced</button>
+    </div>
+
+    <div class="card price-card">
+      <h3>PRO</h3>
+      <div class="price">₹1299<small>/month</small></div>
+      <p class="muted">Personal Coach Assistant access, adaptive training, nutrition and advanced planning.</p>
+      <div class="spacer"></div>
+      <button class="btn primary" onclick="selectPlan('PRO','₹1299/month')">Choose PRO</button>
+    </div>
+
+    <div class="card price-card elite">
+      <div class="eyebrow">PREMIUM COACHING</div>
+      <h3>Elite</h3>
+      <div class="price">₹1499<small>/month</small></div>
+      <p>Personal coaching support plus direct human coach interaction and coach matching.</p>
+      <div class="spacer"></div>
+      <button class="btn primary" onclick="selectPlan('Elite','₹1499/month');setTimeout(()=>IF8.open(),150)">Choose Elite</button>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:18px">
+    <div class="eyebrow">ONE-TIME SERVICES</div>
+    <h3>Need only one deliverable?</h3>
+    <p class="muted">These options do not create a permanent long-term profile.</p>
+    <div class="actions">
+      <button class="btn" onclick="openOneTime('diet')">Diet Only · ₹199</button>
+      <button class="btn" onclick="openOneTime('workout')">Workout Only · ₹299</button>
+      <button class="btn" onclick="openOneTime('bundle')">Workout + Diet · ₹499</button>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="profile" class="page"><div class="wrap"><div class="eyebrow">Long-term programs only</div><h2>Build Your Lifter Profile</h2><p class="muted">This profile is created only when you join a Beginner, Intermediate, Advanced or PRO program.</p>
+<form id="profileForm" class="card form-grid" onsubmit="saveProfile(event)">
+<div class="field"><label>Name</label><input name="name" required></div><div class="field"><label>Age</label><input name="age" type="number" required></div>
+<div class="field"><label>Bodyweight (kg)</label><input name="weight" type="number" step=".1" required></div><div class="field"><label>Training days/week</label><input name="days" type="number" min="2" max="7" value="4"></div>
+<div class="field"><label>Squat 1RM</label><input name="squat" type="number"></div><div class="field"><label>Bench 1RM</label><input name="bench" type="number"></div>
+<div class="field"><label>Deadlift 1RM</label><input name="deadlift" type="number"></div><div class="field"><label>Monthly food budget ₹</label><input name="budget" type="number"></div>
+<div class="field full"><label>Program</label><select name="plan"><option>Beginner</option><option>Intermediate</option><option>Advanced</option><option>PRO</option></select></div>
+<div class="field full"><button class="btn primary" type="submit">Create Profile & Open Dashboard</button></div></form></div></section>
+
+<section id="oneTime" class="page"><div class="wrap"><div id="oneTimeBox"></div></div></section>
+
+<section id="dashboard" class="page">
+<div class="wrap">
+  <div class="eyebrow">YOUR PROGRAM WORKSPACE</div>
+  <h2>Dashboard</h2>
+  <div id="profileSummary" class="card"></div>
+
+  <div class="dashboard-hub">
+    <div class="card dashboard-option">
+      <div class="dashboard-icon">🏋️</div>
+      <h3>Training</h3>
+      <p class="muted">Choose your split and training requirements. Get a complete routine with exercises, sets, reps, RPE and SBD loading.</p>
+      <button class="btn primary" onclick="openDashModule('training')">Build My Training</button>
+    </div>
+
+    <div class="card dashboard-option">
+      <div class="dashboard-icon">🍛</div>
+      <h3>Nutrition</h3>
+      <p class="muted">Tell us your goal, diet type, foods and budget. Get a practical meal structure, calories, protein and food swaps.</p>
+      <button class="btn primary" onclick="openDashModule('nutrition')">Build My Nutrition</button>
+    </div>
+
+    <div class="card dashboard-option">
+      <div class="dashboard-icon">🏆</div>
+      <h3>Meet Prep</h3>
+      <p class="muted">Enter your current numbers and competition date. Get attempt strategy, warm-up flow and meet-day priorities.</p>
+      <button class="btn primary" onclick="openDashModule('meet')">Prepare My Meet</button>
+    </div>
+
+    <div class="card dashboard-option">
+      <div class="dashboard-icon">🔋</div>
+      <h3>Recovery</h3>
+      <p class="muted">Give sleep, stress, soreness and training-load information. Get a simple recovery adjustment plan.</p>
+      <button class="btn primary" onclick="openDashModule('recovery')">Check Recovery</button>
+    </div>
+
+    <div class="card dashboard-option">
+      <div class="dashboard-icon">📈</div>
+      <h3>Strength Growth</h3>
+      <p class="muted">Tell us where your squat, bench or deadlift is stuck. Get a weak-point plan and targeted accessories.</p>
+      <button class="btn primary" onclick="openDashModule('strength')">Grow My Lifts</button>
+    </div>
+
+    <div class="card dashboard-option">
+      <div class="dashboard-icon">🎥</div>
+      <h3>Technique Review</h3>
+      <p class="muted">Upload your lift and receive the structured technique review.</p>
+      <button class="btn primary" onclick="showPage('form')">Review My Lift</button>
+    </div>
+
+    <div class="card dashboard-option">
+      <div class="dashboard-icon">💬</div>
+      <h3>Coach Assistant</h3>
+      <p class="muted">Ask questions about training, nutrition, recovery, supplements, equipment and competition.</p>
+      <button class="btn primary" onclick="showPage('coach')">Ask Coach Assistant</button>
+    </div>
+
+    <div class="card dashboard-option">
+      <div class="dashboard-icon">🧰</div>
+      <h3>Accessories</h3>
+      <p class="muted">Choose a lift and weakness to get a targeted accessory selection and progression idea.</p>
+      <button class="btn primary" onclick="openDashModule('accessories')">Choose Accessories</button>
+    </div>
+  </div>
+
+  <div id="dashModuleBox" class="card" style="display:none;margin-top:18px"></div>
+  <div id="dashOutput" class="output empty" style="display:none"></div>
+</div>
+</section>
+
+<section id="coach" class="page"><div class="wrap"><div class="eyebrow">IRONFORGE COACH</div><h2>Coach Assistant</h2><p class="muted">Tell us what is happening with your training, nutrition or competition preparation and get practical guidance for your next step.</p>
+<div class="ai-agent card"><div id="chatLog" class="chat"><div class="bubble bot">Tell me what you need help with. I’ll use your saved profile when it’s available.</div></div><div class="chatrow"><input id="chatInput" placeholder="Example: My squat was 180 × 3 @ RPE 9.5. What should I change?"><button class="btn primary" onclick="askAgent()">Send</button></div></div>
+<div class="notice">Your information is used to prepare guidance around the details you provide. For injury or medical concerns, consult a qualified professional.</div>
+</div></section>
+
+<section id="form" class="page"><div class="wrap"><div class="eyebrow">Technique workspace</div><h2>Technique Review</h2><p class="muted">Select a lift and upload a video. Upload a clear lift video and get a focused review with practical cues you can apply on your next set.</p>
+<div class="card"><div class="field"><label>Lift</label><select id="lift"><option>Squat</option><option>Bench Press</option><option>Deadlift</option></select></div><div class="video-box"><input id="videoFile" type="file" accept="video/*" onchange="previewVideo(event)"><video id="videoPreview" class="video-preview hidden" controls></video></div><button class="btn primary" style="margin-top:14px" onclick="localFormReview()">Get My Technique Review</button><div id="formOutput" class="output empty">Upload a video to begin.</div></div></div></section>
+
+
+<section id="elite" class="page">
+<div class="if8-shell">
+  <div class="if8-card">
+    <div class="if8-eyebrow">ELITE COACHING · ₹1499/MONTH</div>
+    <h2>Choose Your Coach</h2>
+    <p class="if8-muted">Tell us what you need first. Then choose from available coaches whose specialty matches your requirements.</p>
+
+    <div class="if8-intake">
+      <div>
+        <label>What do you need?</label>
+        <select id="eliteNeed">
+          <option>Powerlifting programming</option>
+          <option>Squat improvement</option>
+          <option>Bench improvement</option>
+          <option>Deadlift improvement</option>
+          <option>Competition / meet prep</option>
+          <option>Technique and form</option>
+          <option>Nutrition</option>
+          <option>Weight management</option>
+          <option>General strength</option>
+        </select>
+      </div>
+      <div>
+        <label>Preferred coaching style</label>
+        <select id="eliteStyle">
+          <option>Detailed and technical</option>
+          <option>Simple and practical</option>
+          <option>Competition focused</option>
+          <option>Beginner friendly</option>
+        </select>
+      </div>
+    </div>
+
+    <button class="if8-btn" onclick="IF8.showCoaches()">Find Matching Coaches</button>
+  </div>
+
+  <div id="eliteCoachResults" style="margin-top:16px"></div>
+  <div id="eliteCoachActions" style="margin-top:16px"></div>
+</div>
+</section>
+
+
+<footer><div class="wrap" id="siteFooter">IRONFORGE INDIA • Built for strength athletes • One-time plans do not create permanent profiles.</div></footer>
+</main>
+
+<script>
+const $=id=>document.getElementById(id);
+function showPage(id){
+ document.querySelectorAll('.page').forEach(x=>x.classList.remove('show'));
+ $(id).classList.add('show');window.scrollTo({top:0,behavior:'smooth'});
+ if(id==='dashboard')refreshDashboard();
+}
+function saveProfile(e){
+ e.preventDefault();const d=Object.fromEntries(new FormData(e.target).entries());
+ localStorage.setItem('ironforgeProfile',JSON.stringify(d));showPage('dashboard');
+}
+function profile(){try{return JSON.parse(localStorage.getItem('ironforgeProfile')||'{}')}catch(e){return {}}}
+function refreshDashboard(){
+ const p=profile();if(!p.name){$('profileSummary').innerHTML='<b>No long-term profile yet.</b><p class="muted">Choose a Beginner, Intermediate, Advanced or PRO plan to create one.</p>';return}
+ const total=(+p.squat||0)+(+p.bench||0)+(+p.deadlift||0);
+ $('profileSummary').innerHTML='<h3>'+esc(p.name)+'</h3><p class="muted">'+esc(p.plan||'Program')+' • '+esc(p.weight||'—')+' kg • '+esc(p.days||'—')+' days/week</p><p>SBD: <b>'+esc(p.squat||0)+' / '+esc(p.bench||0)+' / '+esc(p.deadlift||0)+'</b> • Total: <b>'+total+' kg</b></p>';
+}
+function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+
+function openOneTime(type){
+ showPage('oneTime');
+ const titles={diet:'Only Diet',workout:'Only Workout',bundle:'Workout + Diet'};
+ let fields='';
+ if(type==='diet'||type==='bundle') fields+=`
+ <div class="field"><label>Name</label><input name="name" required></div>
+ <div class="field"><label>Age</label><input name="age" type="number" required></div>
+ <div class="field"><label>Bodyweight kg</label><input name="weight" type="number" step=".1" required></div>
+ <div class="field"><label>Monthly food budget ₹</label><input name="budget" type="number" required></div>
+ <div class="field"><label>Diet type</label><select name="diet"><option>Vegetarian</option><option>Egg</option><option>Non-Vegetarian</option></select></div>
+ <div class="field"><label>Foods you avoid</label><input name="avoid" placeholder="e.g. milk, peanuts"></div>
+ <div class="field full"><label>Normal foods / preferences</label><textarea name="foods" placeholder="Tell IronForge what you normally eat"></textarea></div>
+ <div class="field full"><label>Extra requirements</label><textarea name="requirements" placeholder="Fat loss, muscle gain, timing, digestion, etc."></textarea></div>`;
+ if(type==='workout'||type==='bundle') fields+=`
+ <div class="field"><label>Training days/week</label><input name="days" type="number" min="2" max="7" value="4"></div>
+ <div class="field"><label>Goal</label><select name="goal"><option>Increase strength</option><option>Competition prep</option><option>General powerlifting</option><option>Fat loss + strength</option></select></div>
+ <div class="field"><label>Squat 1RM kg</label><input name="squat" type="number"></div>
+ <div class="field"><label>Bench 1RM kg</label><input name="bench" type="number"></div>
+ <div class="field"><label>Deadlift 1RM kg</label><input name="deadlift" type="number"></div>
+ <div class="field"><label>Equipment</label><input name="equipment" placeholder="Gym / home / rack / machines"></div>
+ <div class="field full"><label>Workout requirements</label><textarea name="workoutReq" placeholder="Weak point, preferred days, injuries to discuss with a professional, etc."></textarea></div>`;
+ $('oneTimeBox').innerHTML=`<div class="eyebrow">ONE-TIME SERVICE</div><h2>${titles[type]}</h2><p class="muted">Complete the intake. IronForge will generate the requested deliverable immediately on this device.</p><form class="card form-grid" onsubmit="generateOneTime(event,'${type}')">${fields}<div class="full"><button class="btn primary">Generate My ${titles[type]} Plan</button></div></form><div id="oneOutput"></div>`;
+}
+function generateOneTime(e,type){
+ e.preventDefault();const d=Object.fromEntries(new FormData(e.target).entries());localStorage.setItem('ironforgeLastOneTime',JSON.stringify({type,d,at:Date.now()}));
+ $('oneOutput').innerHTML='<div class="output">IronForge Your plan is being prepared…</div>';
+ setTimeout(()=>{$('oneOutput').innerHTML='<div class="output">'+esc(makePlan(type,d))+'</div><div class="notice success">Plan generated. This was a one-time service; no permanent client profile was created.</div>'},650);
+}
+function makePlan(type,d){
+ let out='IRONFORGE COACH — '+(type==='diet'?'PERSONALIZED DIET PLAN':type==='workout'?'PERSONALIZED WORKOUT PLAN':'PERSONALIZED WORKOUT + DIET PLAN')+'\\n\\n';
+ if(type==='diet'||type==='bundle'){
+  const w=+d.weight||80,budget=+d.budget||6000,protein=Math.round(w*1.7),cal=Math.round(w*31);
+  out+='NUTRITION\\nEstimated starting calories: '+cal+' kcal/day\\nProtein target: '+protein+' g/day\\nFood budget: ₹'+budget+'/month\\nDiet: '+(d.diet||'Not specified')+'\\n\\n';
+  out+='SAMPLE DAY\\n1. Breakfast: oats + milk/curd or soy milk + banana + a protein source.\\n2. Lunch: rice/roti + dal + vegetables + curd/paneer/soy/chicken according to diet.\\n3. Pre-workout: banana + poha/upma or another easy carb meal.\\n4. Post-workout: protein-rich meal + rice/roti/potatoes.\\n5. Dinner: dal/soy/paneer/eggs/chicken + vegetables + roti/rice.\\n\\n';
+  out+='FOOD SWAPS\\n• Paneer ↔ tofu ↔ soya chunks ↔ eggs ↔ chicken (according to diet)\\n• Rice ↔ roti ↔ poha ↔ potatoes\\n• Oats ↔ daliya ↔ poha\\n• Curd ↔ milk ↔ suitable fortified alternative\\n• Banana ↔ seasonal fruit\\n• Peanuts ↔ roasted chana\\n• Dal ↔ rajma ↔ chole\\n• Whey ↔ another convenient protein source\\n• Expensive vegetables ↔ seasonal local vegetables\\n• Packaged snacks ↔ roasted chana/makhana/fruit\\n\\n';
+  out+='ADJUSTMENT RULE\\nIf bodyweight is not moving toward the goal for 2–3 weeks, adjust calories gradually rather than making a large change at once.\\n\\n';
+ }
+ if(type==='workout'||type==='bundle'){
+  const days=+d.days||4,s=+d.squat||0,b=+d.bench||0,dl=+d.deadlift||0;
+  out+='TRAINING\\nSchedule: '+days+' days/week\\nGoal: '+(d.goal||'Strength')+'\\n';
+  out+='\\nDAY 1 — SQUAT FOCUS\\nSquat: 4 × 4 @ RPE 7\\nBench: 4 × 5 @ RPE 7\\nLeg accessory: 3 × 8–12\\nCore: 3 × 10–15\\n';
+  out+='\\nDAY 2 — BENCH FOCUS\\nBench: 5 × 4 @ RPE 7–8\\nDeadlift: 3 × 4 @ RPE 7\\nUpper-back accessory: 3 × 8–12\\nTriceps: 3 × 10–15\\n';
+  out+='\\nDAY 3 — RECOVERY / OPTIONAL\\nTechnique work: 3 × 5 @ RPE 6\\nMobility + easy accessories.\\n';
+  out+='\\nDAY 4 — DEADLIFT FOCUS\\nDeadlift: 4 × 3 @ RPE 7–8\\nSquat variation: 3 × 5 @ RPE 7\\nBench variation: 4 × 5 @ RPE 7\\nHamstrings + trunk: 3 × 10–15\\n\\n';
+  out+='PROGRESSION\\nWhen all prescribed work is completed below target RPE, add a small amount next exposure. If the target RPE is exceeded, reduce load 2.5–5% and preserve technique.\\n\\n';
+  out+='CURRENT 1RM INPUTS\\nSquat: '+(s||'—')+' kg | Bench: '+(b||'—')+' kg | Deadlift: '+(dl||'—')+' kg\\n';
+ }
+ out+='\\nIMPORTANT\\nThis is a starting plan generated from the information supplied. Track RPE, performance and recovery and adjust progressively. For pain/injury or medical issues, consult a qualified professional.';
+ return out;
+}
+
+function dashWorkout(){
+ const p=profile();
+ const d={days:p?.days||4,squat:p?.squat||0,bench:p?.bench||0,deadlift:p?.deadlift||0,goal:'Increase strength'};
+ $('dashOutput').innerHTML='<div class="output">'+esc(makePlan('workout',d))+'</div>';
+}
+function dashNutrition(){
+ const p=profile();
+ const d={weight:p?.weight||80,budget:6000,diet:p?.diet||'Vegetarian',foods:'',avoid:'',requirements:''};
+ $('dashOutput').innerHTML='<div class="output">'+esc(makePlan('diet',d))+'</div>';
+}
+function dashMeet(){
+ $('dashOutput').innerHTML='<div class="output">MEET PREP\\n\\n1. Confirm your competition rules, weigh-in time and equipment requirements.\\n2. Plan warm-ups so your final warm-up finishes with enough time before the platform.\\n3. Open with a confident, repeatable attempt.\\n4. Use the second attempt to build the total.\\n5. Take the third attempt according to how the second moved and the result you need.\\n6. Keep food, hydration and timing simple on meet day.\\n\\nFor a competition-specific attempt plan, use your actual current SBD numbers and meet details.</div>';
+}
+
+function askAgent(){
+ const q=$('chatInput').value.trim();if(!q)return;const log=$('chatLog');const u=document.createElement('div');u.className='bubble user';u.textContent=q;log.appendChild(u);$('chatInput').value='';
+ const b=document.createElement('div');b.className='bubble bot';b.textContent=localAnswer(q);log.appendChild(b);log.scrollTop=log.scrollHeight;
+}
+function localAnswer(q){
+ const p=profile(),x=q.toLowerCase();
+ if(/rpe|fatigue|tired|heavy|bad session/.test(x)) return 'IRONFORGE COACH:\\n\\nIf the prescribed work is consistently above target RPE, reduce the next exposure by about 2.5–5% and keep the technique clean. If fatigue is isolated, avoid changing the whole program from one session. Track sleep, soreness and performance for the next few sessions.';
+ if(/diet|food|protein|calorie|nutrition/.test(x)) return 'IRONFORGE COACH:\\n\\nStart around 1.6–2.0 g protein/kg/day, then distribute protein across 3–5 meals. For an Indian budget, rotate dal, chana, rajma, soy, curd, eggs or chicken according to your diet and use seasonal vegetables. Use the Diet Only intake for a complete personalized plan with food swaps.';
+ if(/squat/.test(x)) return 'IRONFORGE COACH:\\n\\nFor squat progress, keep most working sets around RPE 6–8, use a repeatable setup and brace before each rep. If depth or balance breaks down as RPE rises, reduce load rather than forcing reps.';
+ if(/bench/.test(x)) return 'IRONFORGE COACH:\\n\\nFor bench progress, keep your setup repeatable: upper-back tightness, stable feet, controlled descent and consistent touch point. Use moderate-volume work around RPE 7–8 and progress gradually.';
+ if(/deadlift/.test(x)) return 'IRONFORGE COACH:\\n\\nFor deadlift progress, prioritize start position and bar proximity. If the bar drifts away or your back position changes substantially at high RPE, reduce load and build the position with controlled reps.';
+ return 'I can help with training, nutrition, RPE, squat, bench, deadlift and competition planning. For a complete personalized plan, use the Diet Only, Workout Only or Workout + Diet intake and enter your actual numbers.';
+}
+function previewVideo(e){const f=e.target.files[0];if(!f)return;const v=$('videoPreview');v.src=URL.createObjectURL(f);v.classList.remove('hidden')}
+function localFormReview(){
+ const f=$('videoFile').files[0];if(!f){$('formOutput').textContent='Please upload a video first.';return}
+ const lift=$('lift').value;
+ $('formOutput').textContent='IRONFORGE COACH REVIEW — '+lift+'\\n\\n1. Setup: review your starting position and repeatability.\\n2. Bar path: keep the bar controlled and close to the intended path.\\n3. Bracing: create consistent trunk pressure before the rep.\\n4. Tempo: avoid rushing the eccentric portion.\\n5. Retest: record another set after applying one cue.\\n\\nNEXT STEP\\nApply one cue at a time, record the next set, and compare the change.';
+}
+function openElite(){
+ showPage('elite');
+ const coaches=[
+ ['Strength Coach','Raw Powerlifting','Programming, SBD strength and long-term progression'],
+ ['Meet Coach','Competition Prep','Attempts, warm-ups and meet-day strategy'],
+ ['Nutrition Coach','Indian Nutrition','Budget-aware Indian nutrition and meal planning']
+ ];
+ $('coachCards').innerHTML=coaches.map(c=>`<div class="card"><div class="eyebrow">AVAILABLE COACH</div><h3>${c[0]}</h3><p><b>${c[1]}</b></p><p class="muted">${c[2]}</p><button class="btn primary" onclick="selectCoach('${c[0]}')">Request This Coach</button></div>`).join('');
+}
+function selectCoach(name){alert('Coach request selected: '+name+'\\n\\nIn a production Elite system, this step would connect to live coach availability, chat/video and scheduling.')}
+refreshDashboard();
+</script>
+
+
+
+
+<!-- IRONFORGE PLAN-FIRST FLOW -->
+<style>
+.if6-plan-gate{max-width:760px;margin:35px auto;padding:26px;border:1px solid #3a3219;border-radius:20px;background:linear-gradient(145deg,#11110f,#17130a);text-align:center}
+.if6-plan-gate h2{margin:8px 0 10px}
+.if6-plan-gate p{color:#aaa;line-height:1.6}
+.if6-plan-badges{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin:16px 0}
+.if6-plan-badge{padding:7px 11px;border-radius:999px;border:1px solid #3a3a3a;background:#181818;color:#fff;font-size:12px}
+.if6-primary{background:#facc15;color:#111;border:0;border-radius:11px;padding:13px 19px;font-weight:900;cursor:pointer}
+.if6-hidden-profile{display:none!important}
+</style>
+<div id="if6PlanGate" class="if6-plan-gate" style="display:none">
+  <div style="color:#facc15;font-size:11px;letter-spacing:.18em;font-weight:900">IRONFORGE MEMBERSHIP FLOW</div>
+  <h2>Choose your plan first</h2>
+  <p>Your profile is created after you choose a plan. Select a package first, then IRONFORGE will unlock the profile setup for your training, nutrition and competition details.</p>
+  <div class="if6-plan-badges">
+    <span class="if6-plan-badge">Training</span>
+    <span class="if6-plan-badge">Nutrition</span>
+    <span class="if6-plan-badge">Meet Prep</span>
+    <span class="if6-plan-badge">Coach Assistant</span>
+  </div>
+  <button class="if6-primary" onclick="IF6.goPricing()">Choose a Plan</button>
+</div>
+
+<!-- IRONFORGE_COACH_ASSISTANT_V5 -->
+<style>
+/* V5: clean client-facing coaching UI */
+.if5-shell{max-width:1180px;margin:0 auto;padding:22px 16px}
+.if5-card{background:#111113;border:1px solid #29292d;border-radius:18px;padding:20px;margin:14px 0}
+.if5-eyebrow{font-size:11px;letter-spacing:.18em;color:#facc15;font-weight:800}
+.if5-muted{color:#a1a1aa}
+.if5-topics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0}
+.if5-topic{background:#f5f5f5;color:#111;border:1px solid #fff;border-radius:14px;padding:14px;cursor:pointer;min-height:72px;box-shadow:0 5px 18px rgba(0,0,0,.12)}
+.if5-topic:hover{border-color:#facc15;transform:translateY(-1px)}
+.if5-topic b{display:block;margin-bottom:5px;color:#111}.if5-topic .if5-muted{color:#444!important}
+.if5-search{display:flex;gap:9px}
+.if5-search input{flex:1;min-width:0}
+.if5-input{box-sizing:border-box;width:100%;background:#0b0b0d;color:#fff;border:1px solid #33343a;border-radius:12px;padding:13px 14px}
+.if5-btn{background:#facc15;color:#111;border:0;border-radius:11px;padding:12px 17px;font-weight:900;cursor:pointer}
+.if5-btn.secondary{background:#202024;color:#fff;border:1px solid #35353a}
+.if5-limit{background:#171308;border:1px solid #5f4b0e;border-radius:14px;padding:13px 15px;margin-top:15px}
+.if5-chat{max-height:560px;overflow:auto;padding:2px}
+.if5-msg{border:1px solid #2d2d32;border-radius:14px;padding:14px 15px;margin:10px 0;background:#131316}
+.if5-msg.user{background:#202024}
+.if5-msg .who{font-size:12px;color:#facc15;font-weight:900;margin-bottom:8px}
+.if5-msg .body{line-height:1.65}
+.if5-msg .body ul{margin:7px 0 0;padding-left:21px}
+.if5-msg .body li{margin:6px 0}
+.if5-answer-section{margin:11px 0;padding:12px 14px;border-left:3px solid #facc15;background:#171719;border-radius:9px}
+.if5-answer-section h4{margin:0 0 7px;color:#facc15}
+.if5-pills{display:flex;gap:7px;flex-wrap:wrap}
+.if5-pill{background:#f5f5f5;color:#111;border:1px solid #fff;border-radius:999px;padding:7px 10px;font-size:12px;cursor:pointer;font-weight:700}
+.if5-review-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.if5-review-box{background:#111113;border:1px solid #29292d;border-radius:15px;padding:17px}
+.if5-review-box h3{margin:0 0 10px;color:#facc15;font-size:17px}
+.if5-review-box ul{margin:0;padding-left:22px}
+.if5-review-box li{margin:7px 0;line-height:1.55}
+.if5-video{width:100%;max-height:460px;background:#050505;border-radius:14px;margin-top:12px}
+.if5-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.if5-stat{background:#151517;border:1px solid #29292d;border-radius:12px;padding:12px}
+.if5-stat small{display:block;color:#a1a1aa;margin-bottom:4px}
+.if5-dashboard{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.if5-list-card{background:#111113;border:1px solid #29292d;border-radius:15px;padding:17px}
+.if5-list-card h3{margin:0 0 10px}
+.if5-list-card ul{margin:0;padding-left:22px}
+.if5-list-card li{margin:7px 0;line-height:1.55}
+.if5-empty{padding:15px;color:#a1a1aa}
+@media(max-width:850px){.if5-topics{grid-template-columns:repeat(2,1fr)}.if5-review-grid,.if5-dashboard{grid-template-columns:1fr}}
+@media(max-width:520px){.if5-topics{grid-template-columns:1fr 1fr}.if5-search{flex-direction:column}.if5-meta{grid-template-columns:1fr}}
+
+/* V6 high-tech technique review */
+.if6-tech-wrap{margin-top:18px}
+.if6-scan{position:relative;background:radial-gradient(circle at 50% 0,#33270b 0,#111 46%,#080808 100%);border:1px solid #3a3219;border-radius:20px;padding:20px;overflow:hidden}
+.if6-scan:before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:#facc15;box-shadow:0 0 18px #facc15;animation:if6scan 2.2s linear infinite}
+@keyframes if6scan{0%{transform:translateX(-100%)}100%{transform:translateX(100%)}}
+.if6-scan-head{display:flex;justify-content:space-between;gap:10px;align-items:center}
+.if6-status{color:#facc15;font-weight:900;font-size:12px;letter-spacing:.12em}
+.if6-confidence{font-size:12px;color:#aaa}
+.if6-tech-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:14px}
+.if6-tech-box{background:#101012;border:1px solid #2e2e33;border-radius:16px;padding:18px}
+.if6-tech-box h3{margin:0 0 10px;color:#facc15;font-size:16px}
+.if6-tech-box ul{margin:0;padding-left:21px}
+.if6-tech-box li{margin:8px 0;line-height:1.55}
+.if6-score{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:13px}
+.if6-score div{background:#161619;border:1px solid #2d2d31;border-radius:12px;padding:11px;text-align:center}
+.if6-score b{display:block;font-size:19px;color:#fff}
+.if6-score span{font-size:11px;color:#aaa}
+.if6-disclaimer{font-size:11px;color:#888;line-height:1.5;margin-top:12px}
+@media(max-width:720px){.if6-tech-grid{grid-template-columns:1fr}.if6-score{grid-template-columns:repeat(2,1fr)}}
+
+</style>
+
+<section id="ironforgeV5Coach" class="page">
+<div class="if5-shell">
+  <div class="if5-card">
+    <div class="if5-eyebrow">IRONFORGE FITNESS SEARCH</div>
+    <h2 style="margin-bottom:7px">Coach Assistant</h2>
+    <p class="if5-muted">Ask fitness questions in normal words. Get practical answers for strength training, powerlifting, bodybuilding, nutrition, recovery, supplements, mobility, equipment, competition and common training problems.</p>
+    <div id="if5Limit" class="if5-limit"></div>
+  </div>
+
+  <div class="if5-card">
+    <div class="if5-eyebrow">SEARCH ANYTHING FITNESS</div>
+    <div class="if5-search" style="margin-top:10px">
+      <input id="if5Input" class="if5-input" placeholder="Example: My deadlift is stuck at the knee. What should I change?" onkeydown="if(event.key==='Enter')IF5.ask()">
+      <button class="if5-btn" onclick="IF5.ask()">Search</button>
+    </div>
+    <div class="if5-pills" style="margin-top:12px">
+      <button class="if5-pill" onclick="IF5.topic('How do I use progressive overload?')">Progressive overload</button>
+      <button class="if5-pill" onclick="IF5.topic('How do I gain strength without gaining too much bodyweight?')">Strength gain</button>
+      <button class="if5-pill" onclick="IF5.topic('How should I cut while keeping my strength?')">Fat loss</button>
+      <button class="if5-pill" onclick="IF5.topic('What supplements are actually worth taking?')">Supplements</button>
+      <button class="if5-pill" onclick="IF5.topic('How do I recover from hard training?')">Recovery</button>
+    </div>
+  </div>
+
+  <div class="if5-topics">
+    <div class="if5-topic" onclick="IF5.topic('My squat is not progressing. Tell me what to change.')"><b>Squat</b><span class="if5-muted">Progress & weak points</span></div>
+    <div class="if5-topic" onclick="IF5.topic('My bench is weak off the chest. What should I do?')"><b>Bench</b><span class="if5-muted">Strength & accessories</span></div>
+    <div class="if5-topic" onclick="IF5.topic('My deadlift is weak at the knee. What should I do?')"><b>Deadlift</b><span class="if5-muted">Sticking points</span></div>
+    <div class="if5-topic" onclick="IF5.topic('Build a 4 day powerlifting program for strength.')"><b>Programming</b><span class="if5-muted">Sets, reps & RPE</span></div>
+    <div class="if5-topic" onclick="IF5.topic('How should I eat for strength?')"><b>Nutrition</b><span class="if5-muted">Calories & protein</span></div>
+    <div class="if5-topic" onclick="IF5.topic('I have pain during training. What should I do?')"><b>Pain / Injury</b><span class="if5-muted">Safe next steps</span></div>
+    <div class="if5-topic" onclick="IF5.topic('Explain RPE and RIR.')"><b>RPE / RIR</b><span class="if5-muted">Effort control</span></div>
+    <div class="if5-topic" onclick="IF5.topic('How should I prepare for a powerlifting meet?')"><b>Meet Prep</b><span class="if5-muted">Attempts & commands</span></div>
+    <div class="if5-topic" onclick="IF5.topic('What accessories should I use to build my lifts?')"><b>Accessories</b><span class="if5-muted">Weak-point work</span></div>
+    <div class="if5-topic" onclick="IF5.topic('Which supplements are useful for strength athletes?')"><b>Supplements</b><span class="if5-muted">Evidence-based basics</span></div>
+    <div class="if5-topic" onclick="IF5.topic('What mobility work should a powerlifter do?')"><b>Mobility</b><span class="if5-muted">Useful movement</span></div>
+    <div class="if5-topic" onclick="IF5.topic('How can I build muscle while powerlifting?')"><b>Hypertrophy</b><span class="if5-muted">Size without junk volume</span></div>
+  </div>
+
+  <div class="if5-card">
+    <div id="if5Chat" class="if5-chat"></div>
+  </div>
+</div>
+</section>
+
+<section id="ironforgeV5Review" class="page">
+<div class="if5-shell">
+  <div class="if5-card">
+    <div class="if5-eyebrow">TECHNIQUE REVIEW</div>
+    <h2>Lift Technique Review</h2>
+    <p class="if5-muted">Every lift has its own review. The result is always shown in this order: <b>mistakes → how to solve them → how to grow the lift → next-session cue.</b></p>
+    <select id="if5Lift" class="if5-input">
+      <option>Squat</option><option>Bench Press</option><option>Deadlift</option>
+    </select>
+    <input id="if5Video" class="if5-input" style="margin-top:10px" type="file" accept="video/*">
+    <video id="if5Preview" class="if5-video" controls style="display:none"></video>
+    <div id="if5VideoMeta"></div>
+    <button class="if5-btn" style="margin-top:13px" onclick="IF5.review()">Review My Lift</button>
+    <div id="if5ReviewOutput" style="margin-top:14px"></div>
+  </div>
+</div>
+</section>
+
+
+<section id="ironforgeV5Dashboard" class="page">
+<div class="if8-shell">
+  <div class="if8-card">
+    <div class="if8-eyebrow">YOUR PROGRAM WORKSPACE</div>
+    <h2>Dashboard</h2>
+    <div id="if5DashSummary"></div>
+  </div>
+
+  <div class="if8-module-grid">
+    <div class="if8-module">
+      <div class="if8-module-icon">📊</div>
+      <h3>Training Numbers</h3>
+      <p class="if8-muted">Enter your SBD numbers and get your training percentages and working weights.</p>
+      <button class="if8-btn" onclick="IF8.openModule('numbers')">Enter Training Numbers</button>
+    </div>
+
+    <div class="if8-module">
+      <div class="if8-module-icon">🏋️</div>
+      <h3>Workouts</h3>
+      <p class="if8-muted">Choose 4, 5 or 6 training days and get a complete routine with exercise names, sets, reps and SBD loading.</p>
+      <button class="if8-btn" onclick="IF8.openModule('workout')">Build My Workout</button>
+    </div>
+
+    <div class="if8-module">
+      <div class="if8-module-icon">🍛</div>
+      <h3>Diet</h3>
+      <p class="if8-muted">Give bodyweight, goal, diet type, meals and budget to receive a structured nutrition plan.</p>
+      <button class="if8-btn" onclick="IF8.openModule('diet')">Build My Diet</button>
+    </div>
+
+    <div class="if8-module">
+      <div class="if8-module-icon">🏆</div>
+      <h3>Meet Prep</h3>
+      <p class="if8-muted">Enter competition information and current SBD numbers for attempts, warm-ups and meet-day planning.</p>
+      <button class="if8-btn" onclick="IF8.openModule('meet')">Build Meet Prep</button>
+    </div>
+
+    <div class="if8-module">
+      <div class="if8-module-icon">📈</div>
+      <h3>Strength Growth</h3>
+      <p class="if8-muted">Choose a lift and sticking point to get targeted variations and accessories.</p>
+      <button class="if8-btn" onclick="IF8.openModule('strength')">Grow My Lift</button>
+    </div>
+
+    <div class="if8-module">
+      <div class="if8-module-icon">🔋</div>
+      <h3>Recovery</h3>
+      <p class="if8-muted">Check sleep, fatigue, soreness and stress before changing your training.</p>
+      <button class="if8-btn" onclick="IF8.openModule('recovery')">Check Recovery</button>
+    </div>
+
+    <div class="if8-module">
+      <div class="if8-module-icon">🎥</div>
+      <h3>Technique Review</h3>
+      <p class="if8-muted">Upload a squat, bench or deadlift video for the structured technique review.</p>
+      <button class="if8-btn" onclick="IF5.show('form')">Review My Lift</button>
+    </div>
+
+    <div class="if8-module">
+      <div class="if8-module-icon">💬</div>
+      <h3>Coach Assistant</h3>
+      <p class="if8-muted">Ask about training, nutrition, recovery, supplements, equipment and competition.</p>
+      <button class="if8-btn" onclick="IF5.show('coach')">Ask Coach Assistant</button>
+    </div>
+  </div>
+
+  <div id="if8ModuleBox" class="if8-card" style="display:none;margin-top:18px"></div>
+  <div id="if8ModuleOutput" style="display:none;margin-top:16px"></div>
+</div>
+</section>
+
+
+<script>
+window.IF5=(function(){
+  const LIMIT=10, KEY='ironforgeCoachUsageV5';
+
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
+  function usage(){
+    const today=new Date().toISOString().slice(0,10);
+    let u={date:today,count:0};
+    try{u=JSON.parse(localStorage.getItem(KEY)||'{}')}catch(e){}
+    if(u.date!==today)u={date:today,count:0};
+    localStorage.setItem(KEY,JSON.stringify(u));return u;
+  }
+  function paid(){
+    try{
+      if(typeof profile==='function'){
+        const p=profile()||{};
+        if(p.plan||p.longTerm||p.subscriptionActive)return true;
+      }
+      const p=JSON.parse(localStorage.getItem('ironforgeProfile')||'{}');
+      return !!(p.plan||p.longTerm||p.subscriptionActive);
+    }catch(e){return false}
+  }
+  function updateLimit(){
+    const e=document.getElementById('if5Limit'); if(!e)return;
+    const u=usage();
+    e.innerHTML=paid()
+      ? '<b style="color:#facc15">Unlimited Coach Assistant</b><br><span class="if5-muted">Your long-term/monthly package includes unlimited questions.</span>'
+      : '<b style="color:#facc15">Free Coach Assistant: '+Math.max(0,LIMIT-u.count)+' questions remaining today</b><br><span class="if5-muted">After the free limit, choose an eligible long-term/monthly package for unlimited access.</span>';
+  }
+  function bullets(items){return '<ul>'+items.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';}
+  function section(title,items){
+    return '<div class="if5-answer-section"><h4>'+esc(title)+'</h4>'+bullets(items)+'</div>';
+  }
+  function renderAnswer(a){
+    let h='';
+    if(a.direct)h+='<div class="if5-answer-section"><h4>What I would do</h4>'+bullets(a.direct)+'</div>';
+    if(a.why)h+=section('Why this matters',a.why);
+    if(a.plan)h+=section('Practical plan',a.plan);
+    if(a.accessories)h+=section('Useful accessories / tools',a.accessories);
+    if(a.watch)h+=section('Watch for this',a.watch);
+    if(a.ask)h+=section('Send these details for a more specific answer',a.ask);
+    return h||section('Answer',a);
+  }
+  function answer(q){
+    const s=q.toLowerCase();
+    const lift=/deadlift|dead lift/.test(s)?'Deadlift':/bench/.test(s)?'Bench Press':/squat/.test(s)?'Squat':'';
+
+    if(/pain|injur|hurt|ache|strain|sprain|tendon|tear|numb|sciatica/.test(s))
+      return {
+        direct:['Do not test an injury with a heavy single.','If pain is sharp, worsening, radiating, or changes your technique, stop or modify that movement.','Reduce load, range of motion, or volume and keep only movements that stay comfortable.'],
+        why:['Pain can come from many different causes, so a chat assistant should not pretend to diagnose the tissue involved.','The goal is to keep you training where possible without repeatedly aggravating the problem.'],
+        plan:['Use pain-free or clearly tolerable variations and lower the training stress temporarily.','Reassess how the area feels during normal daily activity and again over the next 24 hours.','For major swelling/deformity, a traumatic pop with immediate loss of function, progressive numbness/weakness, loss of bladder/bowel control, chest pain/severe breathing trouble, or fever with a hot swollen joint, get urgent medical assessment.'],
+        watch:['Do not use painkillers simply to hide symptoms so you can keep lifting heavy.'],
+        ask:['Exact body area and side','Which exercise causes it','When it started and what happened','Pain from 0–10 and what it feels like','Load, reps and RPE','Whether normal daily activities hurt']
+      };
+
+    if(/rpe|rir|reps in reserve/.test(s))
+      return {direct:['RPE 6 ≈ 4 reps left.','RPE 7 ≈ 3 reps left.','RPE 8 ≈ 2 reps left.','RPE 9 ≈ 1 rep left.','RPE 10 = maximum effort.'],plan:['Keep most normal strength work around RPE 6–8.','Use higher RPE strategically rather than turning every session into a test.','If the same load suddenly feels much harder, reduce load or volume instead of forcing the plan.']};
+
+    if(/progressive overload|overload/.test(s))
+      return {direct:['Progress one variable at a time: load, reps, sets or execution quality.','Keep technique consistent so a heavier number actually represents progress.'],plan:['Example: 3×6 at RPE 7 → next exposure add a small amount if all reps were clean.','If RPE jumps above target, repeat the load or reduce it instead of forcing progression.','Progress accessories with the same idea over several weeks.']};
+
+    if(/program|routine|workout|sets|reps|frequency|volume|intensity|deload|periodiz|4 day|5 day|6 day/.test(s))
+      return {direct:['Keep competition lifts specific and practice them regularly.','Use most main work around RPE 6–8.','Use variations only when they solve a real technical or muscular problem.'],plan:['Main lifts: quality work first.','Variations: usually 1–2 targeted choices per lift.','Accessories: 1–3 useful movements per weak area, progressed gradually.','Deload or reduce volume when accumulated fatigue is clearly hurting performance.'],ask:['Training days per week','Current squat / bench / deadlift','Recent working sets and RPE','Main sticking point','Equipment available']};
+
+    if(/diet|nutrition|protein|calorie|macro|meal|food|cut|bulk|surplus|deficit|weight loss|fat loss|gain weight/.test(s))
+      return {direct:['Start with a clear goal: gain, maintain or lose bodyweight.','For most strength athletes, protein around 1.6–2.2 g/kg/day is a useful starting range.','Keep enough carbohydrate around training to support performance.'],plan:['For gaining: use a modest calorie surplus and monitor a 2–3 week weight trend.','For cutting: use a modest deficit, keep protein high and try to keep training performance stable.','For Indian diets, build meals around rice/roti, dal, chana/rajma, milk/curd, paneer/soy/tofu, eggs or chicken, vegetables and fruit according to diet preference.'],ask:['Bodyweight','Goal','Diet type','Daily activity','Training days','Monthly food budget']};
+
+    if(/creatine|caffeine|supplement|whey|protein powder|electrolyte|vitamin|omega/.test(s))
+      return {direct:['Creatine monohydrate is one of the better-supported options for strength and high-intensity performance.','Protein powder is mainly a convenient food source, not a requirement.','Caffeine can help performance for some people, but it should not replace sleep.'],plan:['Use supplements to fill gaps after food, sleep and training are in place.','Avoid megadoses and check with a clinician/pharmacist if you use medicines or have a medical condition.']};
+
+    if(/sleep|recover|recovery|fatigue|sore|stress/.test(s))
+      return {direct:['Aim for consistent 7–9 hours of sleep.','Keep calories, protein and hydration adequate.','Do not solve every bad session by adding more training.'],plan:['If one session is bad, continue the plan and monitor.','If several sessions decline with poor sleep, soreness or life stress, reduce training stress before adding more work.','Keep hard sessions spaced so the same tissues are not repeatedly hammered.']};
+
+    if(/meet|competition|attempt|opener|second|third|command|ipf/.test(s))
+      return {direct:['Practice competition commands and setup before meet day.','Choose an opener you can perform confidently.','Use the second attempt to secure a meaningful total.','Choose the third based on how the second moved and what you need.'],plan:['Keep warm-ups familiar.','Do not make major last-minute equipment or nutrition changes.','Base attempts on current strength and recent performance, not an old PR.']};
+
+    if(/mobility|stretch|flexib/.test(s))
+      return {direct:['Use mobility work to improve a position you actually need for the lift.','Do not aggressively stretch a painful area and assume it will fix the problem.'],plan:['Squat: ankles and hips if they limit your position.','Bench: shoulders and upper back for a stable setup.','Deadlift: hips/hamstrings only when they are actually limiting the start position.','Keep mobility short and repeatable rather than turning warm-ups into long sessions.']};
+
+    if(/muscle|hypertrophy|size|build mass|bodybuilding/.test(s))
+      return {direct:['Train the target muscle with enough hard sets and progressive overload.','Use a range of reps that lets you train the muscle hard with good technique.','Keep protein and total calories aligned with the goal.'],plan:['For powerlifters, put hypertrophy work where it supports rather than ruins the main lifts.','Prioritize muscles that limit your squat, bench or deadlift.','Add volume gradually instead of piling on junk volume.']};
+
+    if(lift && /stuck|plateau|weak|increase|grow|improve|progress|number|pr|strong/.test(s))
+      return {
+        direct:[
+          lift+' progress should be driven by the actual sticking point, not by adding random exercises.',
+          'Keep the competition lift in your week and keep most work around RPE 6–8.',
+          'Use 1–2 targeted accessories and progress them for several weeks.'
+        ],
+        plan: lift==='Squat'
+          ? ['Failing out of the hole: paused squats and quad work are useful options.','Hips shooting up: controlled paused/tempo work plus quads and trunk.','Folding forward: upper-back and trunk strength plus a repeatable setup.']
+          : lift==='Bench Press'
+          ? ['Weak off chest: paused bench or Spoto-style work plus chest/triceps.','Weak through mid-range: close-grip bench and triceps work.','Weak lockout: prioritize triceps and stable upper-back positioning.']
+          : ['Weak from floor: paused or deficit work when your start position is appropriate.','Weak at knee: paused deadlifts plus hamstring/lat work.','Weak lockout: RDLs, hip-extension work and trunk strength.'],
+        accessories: lift==='Squat'
+          ? ['Paused squat','Split squat or leg press','RDL or hamstring curl','Weighted plank / ab-wheel']
+          : lift==='Bench Press'
+          ? ['Paused bench','Close-grip bench','Triceps extensions / pushdowns','Rows / pulldowns']
+          : ['Paused or tempo deadlift','RDL','Rows / pulldowns','Hamstring curls / trunk work'],
+        ask:['Current 1RM','Recent working sets and RPE','Where the rep fails','Training days per week','What changed before the plateau']
+      };
+
+    if(/squat/.test(s))
+      return {direct:['For squat technique, make your stance, brace and descent repeatable.','Keep pressure through the whole foot and keep the bar over the mid-foot.'],plan:['Film a side/front angle with the whole body and bar visible.','Use controlled warm-up sets before heavy work.'],accessories:['Paused squat','Split squat / leg press','RDL / hamstring curl','Trunk work']};
+
+    if(/bench/.test(s))
+      return {direct:['For bench technique, make your upper-back position, touch point and leg drive repeatable.','Do not let fatigue change your bar path dramatically.'],plan:['Use a controlled descent and consistent touch point.','Keep feet planted and use leg drive without losing your setup.'],accessories:['Paused bench','Close-grip bench','Triceps work','Rows / pulldowns']};
+
+    if(/deadlift/.test(s))
+      return {direct:['For deadlift technique, repeat the same start position and keep the bar close.','Pull the slack out before the bar leaves the floor.'],plan:['Push the floor away rather than jerking the bar.','Finish tall without excessive backward lean.'],accessories:['Paused deadlift','RDL','Rows / pulldowns','Hamstring and trunk work']};
+
+    if(/equipment|belt|sleeve|shoe|barbell|wrap|strap/.test(s))
+      return {direct:['Buy equipment to solve a real training or competition need, not because it looks advanced.','For competition equipment, check the federation rules before buying.'],plan:['Start with stable footwear, a suitable belt if you use one, and competition-legal support gear where relevant.','Use straps in training when they help you accumulate pulling volume without turning every set into a grip test.']};
+
+    return {direct:['I can help with strength training, powerlifting, bodybuilding, programming, nutrition, recovery, pain/injury training modifications, technique, mobility, supplements, equipment, competition preparation and plateaus.'],plan:['Ask the question in normal words.','For a personalized answer, include your goal, bodyweight, training experience, recent sets/reps/RPE and training frequency.','I will break the answer into clear action points instead of one long paragraph.']};
+  }
+
+  function addMessage(role,html,isUser){
+    const c=document.getElementById('if5Chat'); if(!c)return;
+    const d=document.createElement('div');d.className='if5-msg'+(isUser?' user':'');
+    d.innerHTML='<div class="who">'+esc(role)+'</div><div class="body">'+html+'</div>';
+    c.appendChild(d);c.scrollTop=c.scrollHeight;
+  }
+
+  function ask(){
+    const i=document.getElementById('if5Input'),q=(i.value||'').trim();if(!q)return;
+    const u=usage();
+    if(!paid() && u.count>=LIMIT){
+      addMessage('Coach Assistant',section('Free limit reached',['Your free daily Coach Assistant limit is finished.','Choose an eligible long-term/monthly package to unlock unlimited questions.','Your saved profile and plans remain available.']),false);
+      return;
+    }
+    if(!paid()){u.count++;localStorage.setItem(KEY,JSON.stringify(u));}
+    addMessage('You',esc(q),true);
+    addMessage('Coach Assistant',renderAnswer(answer(q)),false);
+    i.value='';updateLimit();
+  }
+
+  function topic(q){document.getElementById('if5Input').value=q;ask();}
+
+  const reviewData={
+    'Squat':{
+      mistakes:['Depth becomes inconsistent as fatigue rises.','Knee/hip path can stop being repeatable when the load gets heavy.','Bracing or upper-back position may soften near the bottom.'],
+      fixes:['Set stance and brace before every rep.','Control the descent and keep pressure through the whole foot.','Drive up while keeping the bar balanced over the mid-foot.'],
+      grow:['Paused squats for position and control.','Split squats or leg press for quad strength.','RDLs or hamstring curls for posterior-chain strength.','Weighted plank or ab-wheel for trunk stability.'],
+      cue:'Brace hard → controlled descent → stay over mid-foot → drive straight up.',
+      note:'Squat review is based on the squat-specific movement checklist. For true frame-by-frame video measurement, the production version needs a connected video-analysis service.'
+    },
+    'Bench Press':{
+      mistakes:['Upper-back tightness can change during the rep.','Touch point can drift as the set gets harder.','Forearm/elbow position can lose consistency.','Leg drive can move the body instead of supporting the press.'],
+      fixes:['Set the upper back before unracking and keep it fixed.','Use the same controlled touch point each rep.','Keep forearms stacked under the bar as much as your build allows.','Set feet before unrack and drive without losing your upper-body position.'],
+      grow:['Paused bench for control off the chest.','Close-grip bench for triceps and mid-range strength.','Triceps extensions or pushdowns.','Rows/pulldowns for upper-back stability.'],
+      cue:'Stay tight → controlled descent → repeat the touch point → press through your strongest path.',
+      note:'Bench review is lift-specific. A connected production vision system can add measured bar path and joint-angle feedback.'
+    },
+    'Deadlift':{
+      mistakes:['Start position can change between reps.','The bar can drift away from the legs.','Hips can rise before the bar breaks from the floor.','Lockout can turn into excessive backward leaning.'],
+      fixes:['Repeat feet, grip, hip position and brace every rep.','Keep the bar close and pull the slack out before moving it.','Push the floor away instead of jerking the bar.','Finish tall and squeeze the glutes without leaning back.'],
+      grow:['Paused deadlift for position and control.','RDL for hamstrings and hinge strength.','Rows/pulldowns for lats and upper back.','Hamstring curls and trunk work.'],
+      cue:'Brace → pull slack → push the floor away → keep the bar close → finish tall.',
+      note:'Deadlift review is lift-specific. A connected production vision system can add measured bar path and timing feedback.'
+    }
+  };
+
+  function review(){
+    const lift=document.getElementById('if5Lift').value;
+    const d=reviewData[lift];
+    const o=document.getElementById('if5ReviewOutput');
+    o.innerHTML=
+      '<div class="if6-tech-wrap">'+
+      '<div class="if6-scan">'+
+        '<div class="if6-scan-head"><div><div class="if6-status">TECHNIQUE ANALYSIS COMPLETE</div><div style="margin-top:5px;font-size:13px;color:#bbb">'+esc(lift)+' protocol</div></div><div class="if6-confidence">Confidence: review framework active</div></div>'+
+        '<div class="if6-score">'+
+          '<div><b>SETUP</b><span>Position check</span></div>'+
+          '<div><b>PATH</b><span>Bar control</span></div>'+
+          '<div><b>CONTROL</b><span>Tempo & stability</span></div>'+
+          '<div><b>FINISH</b><span>Completion</span></div>'+
+        '</div>'+
+      '</div>'+
+      '<div class="if6-tech-grid">'+
+        '<div class="if6-tech-box"><h3>01 · Mistakes detected</h3>'+bullets(d.mistakes)+'</div>'+
+        '<div class="if6-tech-box"><h3>02 · How to solve them</h3>'+bullets(d.fixes)+'</div>'+
+        '<div class="if6-tech-box"><h3>03 · How to grow the lift</h3>'+bullets(d.grow)+'</div>'+
+        '<div class="if6-tech-box"><h3>04 · Next session</h3>'+bullets([d.cue])+'</div>'+
+      '</div>'+
+      '<div class="if5-card"><b style="color:#facc15">Coach action plan</b>'+bullets(['Apply one technical change at a time.','Use the listed variation/accessory for 3–6 weeks before judging it.','Record the next working set and compare technique under the same load and conditions.'])+'</div>'+
+      '<div class="if6-disclaimer">'+esc(d.note)+'</div>'+
+      '</div>';
+  }
+
+  function setupVideo(){
+    const input=document.getElementById('if5Video'),v=document.getElementById('if5Preview'),m=document.getElementById('if5VideoMeta');
+    if(!input)return;
+    input.addEventListener('change',function(){
+      const f=input.files&&input.files[0];if(!f)return;
+      v.src=URL.createObjectURL(f);v.style.display='block';
+      v.onloadedmetadata=function(){
+        m.innerHTML='<div class="if5-meta"><div class="if5-stat"><small>Video</small>'+esc(f.name)+'</div><div class="if5-stat"><small>Duration</small>'+esc((v.duration||0).toFixed(1))+' sec</div><div class="if5-stat"><small>Format</small>'+esc(f.type||'video')+'</div></div>';
+      };
+    });
+  }
+
+  function renderDashboard(){
+    const p=typeof profile==='function'?profile():{};
+    const s=+p.squat||0,b=+p.bench||0,d=+p.deadlift||0,total=s+b+d;
+    const summary=document.getElementById('if5DashSummary'),cards=document.getElementById('if5DashCards');
+    if(!p.name){
+      summary.innerHTML='<div class="if5-empty">No long-term profile yet. Build a profile to see personalized dashboard information.</div>';
+      cards.innerHTML='';
+      return;
+    }
+    summary.innerHTML=
+      '<div class="if5-pills"><span class="if5-pill">'+esc(p.plan||'Program')+'</span><span class="if5-pill">'+esc(p.weight||'—')+' kg</span><span class="if5-pill">'+esc(p.days||'—')+' days/week</span></div>'+
+      '<div class="if5-meta"><div class="if5-stat"><small>Squat</small><b>'+s+' kg</b></div><div class="if5-stat"><small>Bench</small><b>'+b+' kg</b></div><div class="if5-stat"><small>Deadlift</small><b>'+d+' kg</b></div></div>'+
+      '<div style="margin-top:12px"><b>Total: '+total+' kg</b></div>';
+
+    cards.innerHTML=
+      '<div class="if5-list-card"><h3>🏋️ Training</h3>'+bullets([
+        'Train '+(p.days||'—')+' days per week.',
+        'Keep main work mostly around RPE 6–8.',
+        'Progress load only when technique and target RPE are controlled.',
+        'Use accessories for the exact weak point rather than adding random volume.'
+      ])+'</div>'+
+      '<div class="if5-list-card"><h3>🍛 Nutrition</h3>'+bullets([
+        'Keep protein high enough to support recovery and muscle growth.',
+        'Keep carbohydrates around training when performance is a priority.',
+        'Use a modest calorie change for gaining or cutting rather than extreme swings.',
+        'Track the 2–3 week trend instead of reacting to one weigh-in.'
+      ])+'</div>'+
+      '<div class="if5-list-card"><h3>🏆 Meet Prep</h3>'+bullets([
+        'Use a confident opener.',
+        'Use the second attempt to secure a meaningful total.',
+        'Choose the third attempt from how the second moves and what you need.',
+        'Practice commands, equipment and warm-up timing before meet day.'
+      ])+'</div>'+
+      '<div class="if5-list-card"><h3>📌 Current Focus</h3>'+bullets([
+        'Squat: '+s+' kg',
+        'Bench: '+b+' kg',
+        'Deadlift: '+d+' kg',
+        'Total: '+total+' kg',
+        'Keep a simple training log with load, reps, RPE and notes.'
+      ])+'</div>';
+  }
+
+  function show(id){
+    document.querySelectorAll('.page').forEach(x=>x.classList.remove('show'));
+    const map={coach:'ironforgeV5Coach',form:'ironforgeV5Review',dashboard:'ironforgeV5Dashboard'};
+    const target=map[id]||id;
+    const e=document.getElementById(target);if(e)e.classList.add('show');
+    window.scrollTo({top:0,behavior:'smooth'});
+    updateLimit();
+    if(target==='ironforgeV5Dashboard' && window.IF8)IF8.render();
+  }
+
+  function back(){showPage('home');}
+  return {ask,topic,review,show,back,renderDashboard,setupVideo};
+})();
+
+document.addEventListener('DOMContentLoaded',function(){
+  IF5.setupVideo();
+  IF5.updateLimit = undefined;
+  /* Route the existing navigation/buttons into the V5 experience. */
+  window.showPage = function(id){
+    if(id==='coach'||id==='form'||id==='dashboard'){IF5.show(id);return;}
+    document.querySelectorAll('.page').forEach(x=>x.classList.remove('show'));
+    const e=document.getElementById(id);if(e)e.classList.add('show');
+    window.scrollTo({top:0,behavior:'smooth'});
+  };
+  /* Make the old dashboard actions open the clean V5 dashboard. */
+  window.dashWorkout=function(){IF5.show('dashboard')};
+  window.dashNutrition=function(){IF5.show('dashboard')};
+  window.dashMeet=function(){IF5.show('dashboard')};
+  /* Keep the old form controls from being used if a cached button points at them. */
+  const oldCoach=document.getElementById('coach'); if(oldCoach)oldCoach.style.display='none';
+  const oldForm=document.getElementById('form'); if(oldForm)oldForm.style.display='none';
+  const oldDash=document.getElementById('dashboard'); if(oldDash)oldDash.style.display='none';
+  IF5.show('home');
+});
+</script>
+
+
+<script id="IRONFORGE_V6_FLOW">
+window.IF6=(function(){
+  function hasPlan(){
+    try{
+      if(typeof profile==='function'){
+        const p=profile()||{};
+        if(p.plan||p.subscriptionActive||p.longTerm)return true;
+      }
+      const p=JSON.parse(localStorage.getItem('ironforgeProfile')||'{}');
+      return !!(p.plan||p.subscriptionActive||p.longTerm);
+    }catch(e){return false}
+  }
+  function goPricing(){
+    if(typeof showPage==='function')showPage('pricing');
+    else {
+      document.querySelectorAll('.page').forEach(x=>x.classList.remove('show'));
+      const e=document.getElementById('pricing');if(e)e.classList.add('show');
+      window.scrollTo({top:0,behavior:'smooth'});
+    }
+  }
+  function profileGate(){
+    if(hasPlan()){
+      if(typeof showPage==='function')showPage('profile');
+      else if(typeof window.openProfile==='function')window.openProfile();
+      return;
+    }
+    document.querySelectorAll('.page').forEach(x=>x.classList.remove('show'));
+    const g=document.getElementById('if6PlanGate');if(g)g.style.display='block';
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  return {hasPlan,goPricing,profileGate};
+})();
+window.openBuildProfile=function(){IF6.profileGate()};
+window.openProfile=function(){IF6.profileGate()};
+
+/* Intercept old Build Profile navigation without exposing it in the menu. */
+document.addEventListener('DOMContentLoaded',function(){
+  document.querySelectorAll('a,button').forEach(function(el){
+    const t=(el.textContent||'').trim().toLowerCase();
+    if(t==='build profile'){
+      el.style.display='none';
+    }
+  });
+
+  /* Make existing pricing/package selection buttons unlock profile only after a plan is selected. */
+  document.querySelectorAll('a,button').forEach(function(el){
+    const t=(el.textContent||'').trim().toLowerCase();
+    if(/^(choose|select|start|buy|get).*(plan|package)|^(beginner|intermediate|advanced|pro|elite)/.test(t)){
+      el.addEventListener('click',function(){
+        setTimeout(function(){
+          try{
+            const p=JSON.parse(localStorage.getItem('ironforgeProfile')||'{}');
+            if(p.plan||p.subscriptionActive||p.longTerm){
+              /* Plan selected/purchased: profile is now available from the post-plan flow. */
+            }
+          }catch(e){}
+        },250);
+      },true);
+    }
+  });
+});
+</script>
+
+
+<script id="IRONFORGE_V7_SCRIPT">
+function selectPlan(plan,price){
+  localStorage.setItem('ironforgePendingPlan',JSON.stringify({plan,price,at:new Date().toISOString()}));
+  if(window.IFPAY) IFPAY.open(plan,price);
+}
+
+function openDashModule(type){
+  const box=document.getElementById('dashModuleBox');
+  box.style.display='block';
+  let title='',intro='',fields='';
+
+  if(type==='training'){
+    title='Build My Training';
+    intro='Choose your split and give the training information. IRONFORGE will create a complete workout routine.';
+    fields=`
+      <div class="field"><label>Training split</label><select id="dSplit">
+        <option value="4">4 Days</option><option value="5">5 Days</option><option value="6">6 Days</option>
+      </select></div>
+      <div class="field"><label>Primary goal</label><select id="dGoal"><option>Strength</option><option>Powerlifting Competition</option><option>Strength + Hypertrophy</option></option></select></div>
+      <div class="field"><label>Current Squat 1RM (kg)</label><input id="dSquat" type="number" value="${esc(profile().squat||'')}"></div>
+      <div class="field"><label>Current Bench 1RM (kg)</label><input id="dBench" type="number" value="${esc(profile().bench||'')}"></div>
+      <div class="field"><label>Current Deadlift 1RM (kg)</label><input id="dDeadlift" type="number" value="${esc(profile().deadlift||'')}"></div>
+      <div class="field"><label>Session length</label><select id="dLength"><option>60 minutes</option><option>75 minutes</option><option>90 minutes</option><option>120 minutes</option></select></div>
+      <div class="field full"><label>Equipment / restrictions</label><textarea id="dEquip" placeholder="Rack, bench, machines, dumbbells, etc."></textarea></div>
+    `;
+  } else if(type==='nutrition'){
+    title='Build My Nutrition';
+    intro='Give your bodyweight, goal, diet preference and budget. The result will be separated into calories, protein, meals and swaps.';
+    fields=`
+      <div class="field"><label>Bodyweight (kg)</label><input id="nWeight" type="number" step=".1" value="${esc(profile().weight||'')}"></div>
+      <div class="field"><label>Goal</label><select id="nGoal"><option>Strength / Maintain</option><option>Lean Gain</option><option>Fat Loss</option><option>Competition Weight Cut</option></select></div>
+      <div class="field"><label>Diet</label><select id="nDiet"><option>Vegetarian</option><option>Egg</option><option>Non-Vegetarian</option></select></div>
+      <div class="field"><label>Monthly food budget (₹)</label><input id="nBudget" type="number" value="${esc(profile().budget||6000)}"></div>
+      <div class="field"><label>Meals per day</label><select id="nMeals"><option>3</option><option selected>4</option><option>5</option><option>6</option></select></div>
+      <div class="field"><label>Foods to avoid</label><input id="nAvoid" placeholder="e.g. peanuts, milk"></div>
+      <div class="field full"><label>Normal foods / preferences</label><textarea id="nFoods" placeholder="Rice, roti, dal, paneer, soy, eggs, chicken, curd, fruit..."></textarea></div>
+    `;
+  } else if(type==='meet'){
+    title='Meet Preparation';
+    intro='Give your competition details. The result will be split into attempts, warm-ups, commands and meet-day priorities.';
+    fields=`
+      <div class="field"><label>Competition date</label><input id="mDate" type="date"></div>
+      <div class="field"><label>Federation / rules</label><input id="mFed" placeholder="IPF / other"></div>
+      <div class="field"><label>Squat current best (kg)</label><input id="mSquat" type="number" value="${esc(profile().squat||'')}"></div>
+      <div class="field"><label>Bench current best (kg)</label><input id="mBench" type="number" value="${esc(profile().bench||'')}"></div>
+      <div class="field"><label>Deadlift current best (kg)</label><input id="mDeadlift" type="number" value="${esc(profile().deadlift||'')}"></div>
+      <div class="field"><label>Goal</label><select id="mGoal"><option>Secure total</option><option>Maximize total</option><option>PR-focused</option></select></div>
+    `;
+  } else if(type==='recovery'){
+    title='Recovery Check';
+    intro='Use this after a hard week or when performance starts dropping.';
+    fields=`
+      <div class="field"><label>Average sleep</label><select id="rSleep"><option>7–9 h</option><option>6–7 h</option><option>Less than 6 h</option></select></div>
+      <div class="field"><label>Fatigue</label><select id="rFatigue"><option>Low</option><option>Moderate</option><option>High</option></select></div>
+      <div class="field"><label>Muscle soreness</label><select id="rSoreness"><option>Low</option><option>Moderate</option><option>High</option></select></div>
+      <div class="field"><label>Stress</label><select id="rStress"><option>Low</option><option>Moderate</option><option>High</option></select></div>
+      <div class="field full"><label>Recent training issue</label><textarea id="rIssue" placeholder="Example: deadlift RPE is suddenly high for the same weight"></textarea></div>
+    `;
+  } else if(type==='strength'){
+    title='Strength Growth';
+    intro='Choose the lift and tell us where you are struggling.';
+    fields=`
+      <div class="field"><label>Lift</label><select id="sLift"><option>Squat</option><option>Bench Press</option><option>Deadlift</option></select></div>
+      <div class="field"><label>Current 1RM (kg)</label><input id="s1rm" type="number"></div>
+      <div class="field"><label>Sticking point</label><select id="sPoint"><option>Off the floor / out of the hole</option><option>Mid-range</option><option>At the knee / transition</option><option>Lockout</option><option>General fatigue</option></select></div>
+      <div class="field"><label>Training days</label><select id="sDays"><option>4</option><option>5</option><option>6</option></select></div>
+      <div class="field full"><label>Recent difficult set</label><input id="sSet" placeholder="Example: 180 × 3 @ RPE 9"></div>
+    `;
+  } else {
+    title='Accessories';
+    intro='Choose the lift and weakness. Get a short targeted accessory menu.';
+    fields=`
+      <div class="field"><label>Lift</label><select id="aLift"><option>Squat</option><option>Bench Press</option><option>Deadlift</option></select></div>
+      <div class="field"><label>Weakness</label><select id="aWeak"><option>Position / technique</option><option>Off the floor / chest</option><option>Mid-range</option><option>Lockout</option><option>General strength</option></select></div>
+      <div class="field"><label>Accessory days available</label><select id="aDays"><option>1</option><option>2</option><option>3</option></select></div>
+    `;
+  }
+
+  box.innerHTML=`
+    <div class="eyebrow">PERSONALIZED INTAKE</div>
+    <h3>${title}</h3>
+    <p class="muted">${intro}</p>
+    <div class="dash-intake">${fields}</div>
+    <div class="actions">
+      <button class="btn primary" onclick="generateDashModule('${type}')">Generate My ${title}</button>
+      <button class="btn secondary" onclick="document.getElementById('dashModuleBox').style.display='none'">Close</button>
+    </div>
+  `;
+  box.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function li(items){return '<ul>'+items.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>'}
+function dashSection(title,items){return '<div class="card" style="margin-top:14px"><h3>'+esc(title)+'</h3>'+li(items)+'</div>'}
+
+function generateDashModule(type){
+  const out=document.getElementById('dashOutput');
+  out.style.display='block';out.classList.remove('empty');
+  const p=profile();
+
+  if(type==='training'){
+    const days=+document.getElementById('dSplit').value||4;
+    const sq=+document.getElementById('dSquat').value||0,b=+document.getElementById('dBench').value||0,dl=+document.getElementById('dDeadlift').value||0;
+    const pct=(n,x)=>n?Math.round(n*x/100)+' kg':'enter 1RM';
+    const plan={
+      4:[
+        ['Day 1 — Squat + Bench',['Back Squat: 4×5 @ 70–75% ('+pct(sq,72)+')','Bench Press: 4×5 @ 70–75% ('+pct(b,72)+')','Romanian Deadlift: 3×8','Chest-supported Row: 3×10','Ab Wheel: 3×8–12']],
+        ['Day 2 — Deadlift + Upper',['Deadlift: 4×4 @ 70–75% ('+pct(dl,72)+')','Paused Bench: 3×5 @ 65–70% ('+pct(b,67)+')','Lat Pulldown: 3×10','Hamstring Curl: 3×10–12','Triceps: 3×12']],
+        ['Day 3 — Squat Variation + Bench',['Paused Squat: 3×5 @ 65–70% ('+pct(sq,67)+')','Bench Press: 4×4 @ 72–77% ('+pct(b,75)+')','Bulgarian Split Squat: 3×8','Row: 3×10','Trunk: 3 sets']],
+        ['Day 4 — Deadlift Variation + Bench',['Deadlift Variation: 3×5 @ 65–70% ('+pct(dl,67)+')','Close-Grip Bench: 3×6 @ 65–72% ('+pct(b,68)+')','RDL or Back Extension: 3×8–10','Pulldown: 3×10','Triceps: 3×12']]
+      ],
+      5:[
+        ['Day 1 — Squat + Bench',['Back Squat: 4×5 @ 70–75% ('+pct(sq,72)+')','Bench Press: 4×5 @ 70–75% ('+pct(b,72)+')','RDL: 3×8','Row: 3×10']],
+        ['Day 2 — Deadlift',['Deadlift: 4×4 @ 70–75% ('+pct(dl,72)+')','Paused Deadlift: 2×4 @ 60–65% ('+pct(dl,63)+')','Hamstring Curl: 3×12','Abs: 3 sets']],
+        ['Day 3 — Bench + Hypertrophy',['Bench Press: 5×4 @ 72–77% ('+pct(b,75)+')','Close-Grip Bench: 3×6 @ 65–70% ('+pct(b,67)+')','Incline DB Press: 3×10','Triceps: 3×12','Pulldown: 3×10']],
+        ['Day 4 — Squat Variation',['Paused Squat: 4×4 @ 65–70% ('+pct(sq,67)+')','Split Squat: 3×8','Leg Press: 3×10','RDL: 3×8','Trunk: 3 sets']],
+        ['Day 5 — Deadlift + Bench',['Deadlift: 3×3 @ 75–80% ('+pct(dl,77)+')','Bench Press: 4×5 @ 70–75% ('+pct(b,72)+')','Row: 3×10','Hamstring Curl: 3×12','Triceps: 3×12']]
+      ],
+      6:[
+        ['Day 1 — Heavy Squat + Bench',['Back Squat: 4×4 @ 75–80% ('+pct(sq,77)+')','Bench Press: 4×4 @ 75–80% ('+pct(b,77)+')','RDL: 3×8','Row: 3×10']],
+        ['Day 2 — Heavy Deadlift',['Deadlift: 4×3 @ 75–80% ('+pct(dl,77)+')','Paused Deadlift: 2×4 @ 60–65% ('+pct(dl,63)+')','Hamstring Curl: 3×12','Abs: 3 sets']],
+        ['Day 3 — Bench Volume',['Bench Press: 5×5 @ 70–75% ('+pct(b,72)+')','Close-Grip Bench: 3×6','DB Press: 3×10','Triceps: 3×12','Pulldown: 3×10']],
+        ['Day 4 — Squat Volume',['Squat: 4×5 @ 67–72% ('+pct(sq,70)+')','Split Squat: 3×8','Leg Press: 3×10','RDL: 3×8']],
+        ['Day 5 — Bench Intensity',['Bench Press: 5×3 @ 78–82% ('+pct(b,80)+')','Paused Bench: 3×4','Row: 3×10','Triceps: 3×12']],
+        ['Day 6 — Deadlift + Squat Variation',['Deadlift: 3×3 @ 72–77% ('+pct(dl,75)+')','Paused Squat: 3×5 @ 65–70% ('+pct(sq,67)+')','Hamstring Curl: 3×12','Trunk: 3 sets']]
+      ]
+    };
+    let html='<h2>'+days+'-Day Training Program</h2><p class="muted">Main-lift percentages are starting points. Keep most work around RPE 6–8 and adjust if technique or RPE is outside the target.</p>';
+    plan[days].forEach(x=>html+=dashSection(x[0],x[1]));
+    html+=dashSection('Progression Rules',['If all planned reps are clean and RPE is on target, add a small amount next exposure.','If target RPE is exceeded, repeat or reduce the load rather than forcing progression.','Keep 1–2 reps in reserve on most work; save very hard efforts for planned exposures.']);
+    out.innerHTML=html;
+  }
+
+  if(type==='nutrition'){
+    const w=+document.getElementById('nWeight').value||70,goal=document.getElementById('nGoal').value,diet=document.getElementById('nDiet').value,budget=+document.getElementById('nBudget').value||6000,meals=document.getElementById('nMeals').value;
+    const calories=Math.round(w*(goal==='Fat Loss'?27:goal==='Lean Gain'?34:31));
+    const protein=Math.round(w*1.8);
+    out.innerHTML='<h2>Personal Nutrition Plan</h2>'+
+      dashSection('Daily Targets',['Calories: approximately '+calories+' kcal to start.','Protein: approximately '+protein+' g/day.','Meals: '+meals+' per day.','Diet: '+diet+'.','Budget: ₹'+budget+' per month.'])+
+      dashSection('Meal Structure',['Meal 1: oats/poha/upma + protein source + fruit.','Meal 2: rice/roti + dal/rajma/chana + vegetables + curd/paneer/soy/eggs/chicken according to diet.','Pre-training: easy-to-digest carbohydrate + protein.','Post-training: rice/roti/potato + protein source + vegetables.','Before bed if needed: curd/milk/soy/paneer or another protein-rich option.'])+
+      dashSection('Budget-Friendly Swaps',['Paneer ↔ soy chunks/tofu/eggs according to diet.','Premium protein foods ↔ dal, chana, rajma, milk/curd and soy to control cost.','Rice/roti/poha/oats/potato can be rotated according to budget and preference.'])+
+      dashSection('Adjustment Rule',['If bodyweight is not moving toward the goal for 2–3 weeks, adjust calories gradually.','Keep training performance and recovery as part of the decision, not only scale weight.']);
+  }
+
+  if(type==='meet'){
+    const sq=+document.getElementById('mSquat').value||0,b=+document.getElementById('mBench').value||0,dl=+document.getElementById('mDeadlift').value||0;
+    const opener=n=>n?Math.round(n*.9/2.5)*2.5:'set after current testing';
+    out.innerHTML='<h2>Meet Preparation Plan</h2>'+
+      dashSection('Suggested Starting Attempts',['Squat opener: approximately '+opener(sq)+' kg.','Bench opener: approximately '+opener(b)+' kg.','Deadlift opener: approximately '+opener(dl)+' kg.','Use an opener you can confidently complete on a normal day.'])+
+      dashSection('Attempt Strategy',['Second attempts should secure a meaningful total while moving toward your goal.','Third attempts should be selected from how the second attempt moved and what the competition requires.','Do not choose all three attempts from old gym PRs.'])+
+      dashSection('Warm-Up Flow',['Keep warm-ups familiar and progressively reduce reps as the bar gets heavier.','Finish the last warm-up early enough to be recovered for the opener.','Practice commands before meet day.'])+
+      dashSection('Meet-Day Checklist',['Equipment checked against federation rules.','Food, fluids and caffeine plan already tested.','Attempt numbers written down.','Commands practiced.','Do not make major new changes on meet day.']);
+  }
+
+  if(type==='recovery'){
+    const sleep=document.getElementById('rSleep').value,fat=document.getElementById('rFatigue').value,sore=document.getElementById('rSoreness').value,stress=document.getElementById('rStress').value;
+    const high=[fat,sore,stress].filter(x=>x==='High').length;
+    out.innerHTML='<h2>Recovery Adjustment</h2>'+
+      dashSection('Current Status',['Sleep: '+sleep+'.','Fatigue: '+fat+'.','Soreness: '+sore+'.','Stress: '+stress+'.'])+
+      dashSection('What to do',['Keep hydration, food and protein consistent.','If performance is normal, continue the planned session.','If fatigue is high, reduce accessory volume before cutting the main lift.','If several sessions are worse than expected, consider a lower-volume week.'])+
+      dashSection('Red Flags',['Do not push through sharp or worsening pain.','For significant injury symptoms or neurological/systemic red flags, seek appropriate medical assessment.']);
+  }
+
+  if(type==='strength'){
+    const lift=document.getElementById('sLift').value,point=document.getElementById('sPoint').value;
+    let a=lift==='Squat'?['Paused Squat','Split Squat / Leg Press','RDL / Hamstring Curl','Trunk Work']:lift==='Bench Press'?['Paused Bench','Close-Grip Bench','Triceps Extension / Pushdown','Rows / Pulldowns']:['Paused Deadlift','RDL','Rows / Pulldowns','Hamstring Curl / Trunk Work'];
+    out.innerHTML='<h2>'+lift+' Strength Growth Plan</h2>'+
+      dashSection('Weak Point',['Lift: '+lift+'.','Sticking point: '+point+'.','Keep the competition lift in the week.','Most work should remain around RPE 6–8.'])+
+      dashSection('Accessories to Prioritize',a)+
+      dashSection('Progression',['Start with 2–4 working sets per selected accessory.','Add reps or small load increases while technique remains consistent.','Keep the same accessory choices long enough to measure progress.']);
+  }
+
+  if(type==='accessories'){
+    const lift=document.getElementById('aLift').value,weak=document.getElementById('aWeak').value;
+    const a=lift==='Squat'?['Paused Squat','Split Squat','Leg Press','RDL','Hamstring Curl','Trunk Work']:lift==='Bench Press'?['Paused Bench','Close-Grip Bench','DB Press','Triceps Pushdown','Rows','Pulldowns']:['Paused Deadlift','RDL','Back Extension','Hamstring Curl','Rows','Pulldowns'];
+    out.innerHTML='<h2>'+lift+' Accessory Menu</h2>'+dashSection('Selected Weakness',[weak])+dashSection('Priority Accessories',a)+dashSection('How to use them',['Choose 2–4 movements rather than doing everything.','Run them for several weeks and track reps/load.','Stop adding volume if it starts reducing the quality of the main lifts.']);
+  }
+}
+</script>
+
+
+<style>
+@media(max-width:850px){
+  header nav{display:flex!important}
+  header .nav{display:flex!important}
+  .if5-topics{grid-template-columns:1fr 1fr!important}
+}
+@media(max-width:520px){
+  .if5-topics{grid-template-columns:1fr 1fr!important}
+}
+</style>
+
+
+<script id="IRONFORGE_V8_SCRIPT">
+window.IF8=(function(){
+  const defaultCoaches=[
+    {name:'Arjun Mehta',focus:'Powerlifting Strength',tags:['SBD','Programming','Strength'],bio:'Best fit for lifters who want structured strength progression and detailed programming.',initials:'AM',active:true},
+    {name:'Riya Sharma',focus:'Competition & Meet Prep',tags:['Meet Prep','Attempts','IPF'],bio:'Best fit for lifters preparing for competition, attempts and meet-day execution.',initials:'RS',active:true},
+    {name:'Vikram Singh',focus:'Squat & Lower Body',tags:['Squat','Lower Body','Technique'],bio:'Best fit for lifters whose squat, bracing or lower-body strength is the main priority.',initials:'VS',active:true},
+    {name:'Neha Kapoor',focus:'Bench & Upper Body',tags:['Bench','Triceps','Upper Body'],bio:'Best fit for bench progression, upper-body strength and weak-point work.',initials:'NK',active:true},
+    {name:'Rahul Verma',focus:'Deadlift & Pulling Strength',tags:['Deadlift','Posterior Chain','Technique'],bio:'Best fit for deadlift sticking points, start position and posterior-chain development.',initials:'RV',active:true},
+    {name:'Ananya Patel',focus:'Indian Sports Nutrition',tags:['Nutrition','Bodyweight','Indian Diet'],bio:'Best fit for practical Indian nutrition, performance eating and bodyweight management.',initials:'AP',active:true}
+  ];
+  function getCoaches(){
+    try{
+      if(Array.isArray(window.IRONFORGE_LIVE_COACHES)&&window.IRONFORGE_LIVE_COACHES.length) return window.IRONFORGE_LIVE_COACHES.filter(c=>c.active!==false);
+      const saved=JSON.parse(localStorage.getItem('ironforgeCoaches')||'null');
+      return Array.isArray(saved)&&saved.length?saved.filter(c=>c.active!==false):defaultCoaches.filter(c=>c.active!==false);
+    }catch(e){return defaultCoaches.filter(c=>c.active!==false)}
+  }
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));}
+  function bullets(a){return '<ul class="if8-list">'+a.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';}
+  function p(){try{return JSON.parse(localStorage.getItem('ironforgeProfile')||'{}')}catch(e){return {}}}
+
+  function open(){showPage('elite');document.getElementById('eliteCoachResults').innerHTML='';document.getElementById('eliteCoachActions').innerHTML='';}
+  function showCoaches(){
+    const need=document.getElementById('eliteNeed').value.toLowerCase();
+    let ranked=getCoaches().map(c=>{
+      let score=0;
+      const text=(c.focus+' '+c.tags.join(' ')).toLowerCase();
+      if(need.includes('squat')&&text.includes('squat'))score+=5;
+      if(need.includes('bench')&&text.includes('bench'))score+=5;
+      if(need.includes('deadlift')&&text.includes('deadlift'))score+=5;
+      if(need.includes('nutrition')&&text.includes('nutrition'))score+=5;
+      if(need.includes('weight')&&text.includes('bodyweight'))score+=5;
+      if(need.includes('meet')&&text.includes('meet'))score+=5;
+      if(need.includes('technique')&&text.includes('technique'))score+=4;
+      if(need.includes('programming')&&text.includes('programming'))score+=4;
+      if(need.includes('general strength')&&text.includes('strength'))score+=3;
+      return {...c,score};
+    }).sort((a,b)=>b.score-a.score);
+
+    document.getElementById('eliteCoachResults').innerHTML=
+      '<div class="if8-card"><div class="if8-eyebrow">MATCHED COACHES</div><h3>'+ranked.length+' coaches available</h3><p class="if8-muted">Select the coach whose focus fits you best.</p><div class="if8-coach-grid">'+
+      ranked.map((c,i)=>'<div class="if8-coach" id="coach_'+i+'"><div class="avatar">'+esc(c.initials)+'</div><div class="if8-match">'+(i===0?'BEST MATCH':'MATCHED COACH')+'</div><h3>'+esc(c.name)+'</h3><b>'+esc(c.focus)+'</b><p class="if8-muted">'+esc(c.bio)+'</p>'+bullets(c.tags.map(t=>'Focus: '+t))+'<button class="if8-btn" onclick="IF8.selectCoach('+i+')">Select This Coach</button></div>').join('')+
+      '</div></div>';
+    window._if8Ranked=ranked;
+  }
+
+  function selectCoach(i){
+    const c=(window._if8Ranked||[])[i];if(!c)return;
+    document.querySelectorAll('.if8-coach').forEach(x=>x.classList.remove('selected'));
+    const el=document.getElementById('coach_'+i);if(el)el.classList.add('selected');
+    localStorage.setItem('ironforgeSelectedCoach',JSON.stringify(c));
+    document.getElementById('eliteCoachActions').innerHTML=
+      '<div class="if8-card"><div class="if8-eyebrow">COACH SELECTED</div><h3>'+esc(c.name)+' · '+esc(c.focus)+'</h3><p class="if8-muted">Choose how you want to work with your coach.</p><div class="if8-actions">'+
+      '<button class="if8-action" onclick="IF8.coachAction(\'Chat with Coach\')">💬 Chat with Coach</button>'+
+      '<button class="if8-action" onclick="IF8.coachAction(\'Video Call\')">📹 Video Call</button>'+
+      '<button class="if8-action" onclick="IF8.coachAction(\'Audio Call\')">📞 Audio Call</button>'+
+      '<button class="if8-action" onclick="IF8.coachAction(\'Schedule Session\')">📅 Schedule Session</button>'+
+      '<button class="if8-action" onclick="IF8.coachAction(\'Send Training Video\')">🎥 Send Training Video</button>'+
+      '<button class="if8-action" onclick="IF8.coachAction(\'Share Training Plan\')">📋 Share Training Plan</button>'+
+      '</div><div id="if8CoachActionResult" style="margin-top:12px"></div></div>';
+  }
+
+  function coachAction(action){
+    const c=JSON.parse(localStorage.getItem('ironforgeSelectedCoach')||'{}');
+    const phone=String(c.whatsapp_number||'').replace(/\D/g,'');
+    const client=(JSON.parse(localStorage.getItem('ironforgeProfile')||'{}').name||'IRONFORGE client');
+    if(!phone){document.getElementById('if8CoachActionResult').innerHTML='<div class="if8-result"><b>WhatsApp is not configured for this coach yet.</b><p class="if8-muted">Please choose another coach or contact IRONFORGE support.</p></div>';return;}
+    const base='https://wa.me/'+phone;
+    if(action==='Chat with Coach'||action==='Audio Call'||action==='Video Call'){
+      const msg=`Hello ${c.name||'Coach'}, I am ${client}. I have selected you as my IRONFORGE coach and would like to arrange a ${action.toLowerCase()}.`;
+      window.open(base+'?text='+encodeURIComponent(msg),'_blank');
+      return;
+    }
+    if(action==='Schedule Session'){
+      document.getElementById('if8CoachActionResult').innerHTML='<div class="if8-result"><b>Choose your preferred slot</b><div class="if8-form-grid" style="margin-top:10px"><div class="if8-field"><label>Date</label><input id="if8SlotDate" type="date"></div><div class="if8-field"><label>Time</label><input id="if8SlotTime" type="time"></div></div><button class="if8-btn" style="margin-top:10px" onclick="IF8.bookWhatsAppSlot()">Open WhatsApp with Slot</button></div>';
+      return;
+    }
+    const msg=`Hello ${c.name||'Coach'}, I am ${client}. I would like to ${action.toLowerCase()} through IRONFORGE.`;
+    window.open(base+'?text='+encodeURIComponent(msg),'_blank');
+  }
+  function bookWhatsAppSlot(){
+    const c=JSON.parse(localStorage.getItem('ironforgeSelectedCoach')||'{}'), phone=String(c.whatsapp_number||'').replace(/\D/g,'');
+    const date=document.getElementById('if8SlotDate')?.value, time=document.getElementById('if8SlotTime')?.value;
+    if(!date||!time){alert('Please select a date and time.');return;}
+    const p=JSON.parse(localStorage.getItem('ironforgeProfile')||'{}');
+    const msg=`Hello ${c.name||'Coach'}, I am ${p.name||'an IRONFORGE client'}. I want to book a video/chat coaching slot on ${date} at ${time}. Please confirm availability.`;
+    window.open('https://wa.me/'+phone+'?text='+encodeURIComponent(msg),'_blank');
+  }
+
+  function openModule(type){
+    const box=document.getElementById('if8ModuleBox');box.style.display='block';
+    let title='',html='';
+    if(type==='numbers'){
+      title='Training Numbers';
+      html='<div class="if8-form-grid">'+
+      '<div class="if8-field"><label>Squat 1RM (kg)</label><input id="i8sq" type="number" value="'+esc(p().squat||'')+'"></div>'+
+      '<div class="if8-field"><label>Bench 1RM (kg)</label><input id="i8bp" type="number" value="'+esc(p().bench||'')+'"></div>'+
+      '<div class="if8-field"><label>Deadlift 1RM (kg)</label><input id="i8dl" type="number" value="'+esc(p().deadlift||'')+'"></div>'+
+      '<div class="if8-field"><label>Target intensity</label><select id="i8pct"><option value="70">70%</option><option value="75" selected>75%</option><option value="80">80%</option><option value="85">85%</option></select></div></div>';
+    } else if(type==='workout'){
+      title='Build My Workout';
+      html='<div class="if8-form-grid">'+
+      '<div class="if8-field"><label>Training split</label><select id="i8days"><option value="4">4 days</option><option value="5">5 days</option><option value="6">6 days</option></select></div>'+
+      '<div class="if8-field"><label>Goal</label><select id="i8wgoal"><option>Strength</option><option>Powerlifting Competition</option><option>Strength + Hypertrophy</option></select></div>'+
+      '<div class="if8-field"><label>Squat 1RM</label><input id="i8wsq" type="number" value="'+esc(p().squat||'')+'"></div>'+
+      '<div class="if8-field"><label>Bench 1RM</label><input id="i8wbp" type="number" value="'+esc(p().bench||'')+'"></div>'+
+      '<div class="if8-field"><label>Deadlift 1RM</label><input id="i8wdl" type="number" value="'+esc(p().deadlift||'')+'"></div>'+
+      '<div class="if8-field"><label>Session length</label><select id="i8len"><option>60 min</option><option>75 min</option><option>90 min</option><option>120 min</option></select></div>'+
+      '<div class="if8-field if8-full"><label>Equipment / requirements</label><textarea id="i8eq"></textarea></div></div>';
+    } else if(type==='diet'){
+      title='Build My Diet';
+      html='<div class="if8-form-grid">'+
+      '<div class="if8-field"><label>Bodyweight (kg)</label><input id="i8wt" type="number" step=".1" value="'+esc(p().weight||'')+'"></div>'+
+      '<div class="if8-field"><label>Goal</label><select id="i8dgoal"><option>Strength / Maintain</option><option>Lean Gain</option><option>Fat Loss</option><option>Competition Weight Management</option></select></div>'+
+      '<div class="if8-field"><label>Diet</label><select id="i8diet"><option>Vegetarian</option><option>Egg</option><option>Non-Vegetarian</option></select></div>'+
+      '<div class="if8-field"><label>Monthly food budget ₹</label><input id="i8budget" type="number" value="'+esc(p().budget||6000)+'"></div>'+
+      '<div class="if8-field"><label>Meals per day</label><select id="i8meals"><option>3</option><option selected>4</option><option>5</option><option>6</option></select></div>'+
+      '<div class="if8-field"><label>Foods to avoid</label><input id="i8avoid"></div>'+
+      '<div class="if8-field if8-full"><label>Normal foods / preferences</label><textarea id="i8foods"></textarea></div></div>';
+    } else if(type==='meet'){
+      title='Meet Prep';
+      html='<div class="if8-form-grid">'+
+      '<div class="if8-field"><label>Competition date</label><input id="i8date" type="date"></div>'+
+      '<div class="if8-field"><label>Federation</label><input id="i8fed" value="IPF"></div>'+
+      '<div class="if8-field"><label>Squat current best</label><input id="i8msq" type="number" value="'+esc(p().squat||'')+'"></div>'+
+      '<div class="if8-field"><label>Bench current best</label><input id="i8mbp" type="number" value="'+esc(p().bench||'')+'"></div>'+
+      '<div class="if8-field"><label>Deadlift current best</label><input id="i8mdl" type="number" value="'+esc(p().deadlift||'')+'"></div>'+
+      '<div class="if8-field"><label>Goal</label><select id="i8mgoal"><option>Secure Total</option><option>Maximize Total</option><option>PR Focused</option></select></div></div>';
+    } else if(type==='strength'){
+      title='Strength Growth';
+      html='<div class="if8-form-grid"><div class="if8-field"><label>Lift</label><select id="i8slift"><option>Squat</option><option>Bench Press</option><option>Deadlift</option></select></div><div class="if8-field"><label>Sticking point</label><select id="i8spoint"><option>Off the floor / out of the hole</option><option>Mid-range</option><option>Lockout</option><option>General fatigue</option></select></div></div>';
+    } else {
+      title='Recovery';
+      html='<div class="if8-form-grid"><div class="if8-field"><label>Sleep</label><select id="i8sleep"><option>7–9 hours</option><option>6–7 hours</option><option>Less than 6 hours</option></select></div><div class="if8-field"><label>Fatigue</label><select id="i8fat"><option>Low</option><option>Moderate</option><option>High</option></select></div><div class="if8-field"><label>Soreness</label><select id="i8sore"><option>Low</option><option>Moderate</option><option>High</option></select></div><div class="if8-field"><label>Stress</label><select id="i8stress"><option>Low</option><option>Moderate</option><option>High</option></select></div></div>';
+    }
+    box.innerHTML='<div class="if8-eyebrow">PERSONALIZED INPUT</div><h3>'+title+'</h3>'+html+'<div class="if8-actions"><button class="if8-btn" onclick="IF8.generate(\''+type+'\')">Generate '+title+'</button><button class="if8-action" onclick="document.getElementById(\'if8ModuleBox\').style.display=\'none\'">Close</button></div>';
+    box.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  function pct(n,x){return n?Math.round(n*x/100/2.5)*2.5+' kg':'enter 1RM';}
+  function result(title,sections){
+    const out=document.getElementById('if8ModuleOutput');out.style.display='block';
+    out.innerHTML='<div class="if8-card"><div class="if8-eyebrow">IRONFORGE PLAN</div><h2>'+esc(title)+'</h2>'+sections.map(s=>'<div class="if8-result"><h3>'+esc(s[0])+'</h3>'+bullets(s[1])+'</div>').join('')+'</div>';
+    out.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  function generate(type){
+    if(type==='numbers'){
+      const s=+document.getElementById('i8sq').value||0,b=+document.getElementById('i8bp').value||0,d=+document.getElementById('i8dl').value||0,x=+document.getElementById('i8pct').value;
+      result('Training Numbers',[
+        ['Current SBD',['Squat: '+(s||'—')+' kg','Bench: '+(b||'—')+' kg','Deadlift: '+(d||'—')+' kg','Total: '+(s+b+d||'—')+' kg']],
+        ['Working Weight at '+x+'%',['Squat: '+pct(s,x),'Bench: '+pct(b,x),'Deadlift: '+pct(d,x)]],
+        ['Useful Training Zones',['60–65%: technique / volume','70–75%: moderate working sets','75–85%: strength-focused work','85%+: use selectively and manage fatigue']]
+      ]);
+    }
+    if(type==='workout'){
+      const days=+document.getElementById('i8days').value||4,s=+document.getElementById('i8wsq').value||0,b=+document.getElementById('i8wbp').value||0,d=+document.getElementById('i8wdl').value||0;
+      const plans={
+        4:[
+          ['Day 1 — Squat + Bench',['Back Squat: 4×5 @ 72% ('+pct(s,72)+')','Bench Press: 4×5 @ 72% ('+pct(b,72)+')','Romanian Deadlift: 3×8','Chest-Supported Row: 3×10','Ab Wheel: 3×8–12']],
+          ['Day 2 — Deadlift + Upper',['Deadlift: 4×4 @ 72% ('+pct(d,72)+')','Paused Bench: 3×5 @ 67% ('+pct(b,67)+')','Lat Pulldown: 3×10','Hamstring Curl: 3×12','Triceps Pushdown: 3×12']],
+          ['Day 3 — Squat Variation + Bench',['Paused Squat: 3×5 @ 67% ('+pct(s,67)+')','Bench Press: 4×4 @ 75% ('+pct(b,75)+')','Bulgarian Split Squat: 3×8','Cable Row: 3×10','Plank: 3 sets']],
+          ['Day 4 — Deadlift Variation + Bench',['Deadlift Variation: 3×5 @ 67% ('+pct(d,67)+')','Close-Grip Bench: 3×6 @ 68% ('+pct(b,68)+')','Back Extension: 3×10','Pulldown: 3×10','Triceps: 3×12']]
+        ],
+        5:[
+          ['Day 1 — Squat + Bench',['Back Squat: 4×5 @ 72% ('+pct(s,72)+')','Bench Press: 4×5 @ 72% ('+pct(b,72)+')','RDL: 3×8','Row: 3×10']],
+          ['Day 2 — Deadlift',['Deadlift: 4×4 @ 72% ('+pct(d,72)+')','Paused Deadlift: 2×4 @ 63% ('+pct(d,63)+')','Hamstring Curl: 3×12','Abs: 3 sets']],
+          ['Day 3 — Bench Volume',['Bench Press: 5×4 @ 75% ('+pct(b,75)+')','Close-Grip Bench: 3×6','Incline DB Press: 3×10','Triceps: 3×12','Pulldown: 3×10']],
+          ['Day 4 — Squat Variation',['Paused Squat: 4×4 @ 67% ('+pct(s,67)+')','Split Squat: 3×8','Leg Press: 3×10','RDL: 3×8']],
+          ['Day 5 — Deadlift + Bench',['Deadlift: 3×3 @ 77% ('+pct(d,77)+')','Bench Press: 4×5 @ 72% ('+pct(b,72)+')','Row: 3×10','Hamstring Curl: 3×12','Triceps: 3×12']]
+        ],
+        6:[
+          ['Day 1 — Heavy Squat + Bench',['Back Squat: 4×4 @ 77% ('+pct(s,77)+')','Bench Press: 4×4 @ 77% ('+pct(b,77)+')','RDL: 3×8','Row: 3×10']],
+          ['Day 2 — Heavy Deadlift',['Deadlift: 4×3 @ 77% ('+pct(d,77)+')','Paused Deadlift: 2×4 @ 63% ('+pct(d,63)+')','Hamstring Curl: 3×12','Abs: 3 sets']],
+          ['Day 3 — Bench Volume',['Bench Press: 5×5 @ 72% ('+pct(b,72)+')','Close-Grip Bench: 3×6','DB Press: 3×10','Triceps: 3×12','Pulldown: 3×10']],
+          ['Day 4 — Squat Volume',['Squat: 4×5 @ 70% ('+pct(s,70)+')','Split Squat: 3×8','Leg Press: 3×10','RDL: 3×8']],
+          ['Day 5 — Bench Intensity',['Bench Press: 5×3 @ 80% ('+pct(b,80)+')','Paused Bench: 3×4','Row: 3×10','Triceps: 3×12']],
+          ['Day 6 — Deadlift + Squat Variation',['Deadlift: 3×3 @ 75% ('+pct(d,75)+')','Paused Squat: 3×5 @ 67% ('+pct(s,67)+')','Hamstring Curl: 3×12','Trunk: 3 sets']]
+        ]
+      };
+      result(days+'-Day Workout',plans[days].concat([['Progression Rules',['Keep most work around RPE 6–8.','If the prescribed weight is much harder than target, reduce it rather than forcing reps.','Add small load only when reps and technique stay consistent.']]]));
+    }
+    if(type==='diet'){
+      const w=+document.getElementById('i8wt').value||70,g=document.getElementById('i8dgoal').value,diet=document.getElementById('i8diet').value,budget=+document.getElementById('i8budget').value||6000,meals=document.getElementById('i8meals').value;
+      const kcal=Math.round(w*(g==='Fat Loss'?27:g==='Lean Gain'?34:31)),protein=Math.round(w*1.8);
+      result('Personal Diet Plan',[
+        ['Daily Targets',['Starting calories: approximately '+kcal+' kcal/day','Protein: approximately '+protein+' g/day','Meals: '+meals+' per day','Diet: '+diet,'Food budget: ₹'+budget+'/month']],
+        ['Meal Structure',['Breakfast: oats/poha/upma + protein source + fruit','Lunch: rice/roti + dal/rajma/chana + vegetables + curd/paneer/soy/eggs/chicken as appropriate','Pre-training: easy carbohydrate + protein','Post-training: carbohydrate + protein-rich meal','Dinner: protein source + vegetables + rice/roti']],
+        ['Budget-Friendly Swaps',['Paneer ↔ soy/tofu/eggs depending on diet','Use dal, chana, rajma, soy and curd to keep protein affordable','Rotate rice, roti, poha, oats and potatoes according to preference and budget']],
+        ['Adjustment',['Track the 2–3 week bodyweight trend','Change calories gradually instead of making large jumps','Keep training performance and recovery in the decision']]
+      ]);
+    }
+    if(type==='meet'){
+      const s=+document.getElementById('i8msq').value||0,b=+document.getElementById('i8mbp').value||0,d=+document.getElementById('i8mdl').value||0;
+      result('Meet Prep',[
+        ['Suggested Openers',['Squat: around '+pct(s,90),'Bench: around '+pct(b,90),'Deadlift: around '+pct(d,90),'Choose an opener you can confidently complete on a normal day.']],
+        ['Attempt Strategy',['Second attempts should secure a meaningful total','Third attempts should be based on how the second moves and what the total requires','Do not base all attempts on old gym PRs']],
+        ['Warm-Up',['Use familiar warm-up jumps','Reduce reps as weight increases','Finish the last warm-up early enough to recover for the opener','Practice commands before meet day']],
+        ['Meet-Day Checklist',['Equipment checked against federation rules','Food, fluids and caffeine plan already tested','Attempts written down','Commands practiced','Avoid major new changes on meet day']]
+      ]);
+    }
+    if(type==='strength'){
+      const lift=document.getElementById('i8slift').value,point=document.getElementById('i8spoint').value;
+      const a=lift==='Squat'?['Paused Squat','Bulgarian Split Squat','Leg Press','RDL','Hamstring Curl','Trunk Work']:lift==='Bench Press'?['Paused Bench','Close-Grip Bench','DB Press','Triceps Pushdown','Rows','Pulldowns']:['Paused Deadlift','RDL','Back Extension','Hamstring Curl','Rows','Pulldowns'];
+      result(lift+' Strength Growth',[
+        ['Weak Point',['Lift: '+lift,'Sticking point: '+point,'Keep the competition lift in the week','Keep most work around RPE 6–8']],
+        ['Accessories to Prioritize',a],
+        ['Progression',['Use 2–4 working sets for selected accessories','Progress reps or small load increases while technique stays consistent','Keep accessory choices stable long enough to measure progress']]
+      ]);
+    }
+    if(type==='recovery'){
+      result('Recovery Check',[
+        ['Current Inputs',['Sleep: '+document.getElementById('i8sleep').value,'Fatigue: '+document.getElementById('i8fat').value,'Soreness: '+document.getElementById('i8sore').value,'Stress: '+document.getElementById('i8stress').value]],
+        ['What to Do',['Keep hydration, food and protein consistent','If performance is normal, continue the plan','If fatigue is high, reduce accessory volume before changing main lifts','If several sessions deteriorate, consider a lower-volume week']],
+        ['Safety',['Do not push through sharp or worsening pain','For significant injury symptoms, seek appropriate medical assessment']]
+      ]);
+    }
+  }
+
+  function render(){
+    const p0=p(),s=+p0.squat||0,b=+p0.bench||0,d=+p0.deadlift||0,total=s+b+d;
+    const e=document.getElementById('if5DashSummary');
+    if(!e)return;
+    if(!p0.name){
+      e.innerHTML='<div class="if8-result"><h3>Profile not completed</h3>'+bullets(['Choose a long-term plan first.','Then complete your lifter profile.','After that, use Training Numbers, Workouts, Diet and Meet Prep from this dashboard.'])+'</div>';
+      return;
+    }
+    e.innerHTML='<div class="if8-number-grid"><div class="if8-number">Squat<b>'+s+' kg</b></div><div class="if8-number">Bench<b>'+b+' kg</b></div><div class="if8-number">Deadlift<b>'+d+' kg</b></div></div><div class="if8-result"><b>Total: '+total+' kg</b><br><span class="if8-muted">'+esc(p0.plan||'Program')+' · '+esc(p0.weight||'—')+' kg · '+esc(p0.days||'—')+' days/week</span></div>';
+  }
+
+  return {open,showCoaches,selectCoach,coachAction,bookWhatsAppSlot,openModule,generate,render};
+})();
+
+document.addEventListener('DOMContentLoaded',function(){
+  window.IF8=window.IF8;
+  IF8.render();
+});
+</script>
+
+
+<style id="IRONFORGE_ADMIN_STYLES">
+.if9-wrap{max-width:1400px;margin:0 auto;padding:28px 18px 70px}
+.if9-head{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.if9-title{font-size:clamp(28px,4vw,48px);font-weight:900;letter-spacing:-1.5px}
+.if9-sub{color:#a1a1aa}
+.if9-grid{display:grid;grid-template-columns:250px 1fr;gap:18px}
+.if9-side,.if9-panel,.if9-stat,.if9-card{background:#111113;border:1px solid #2f2f35;border-radius:16px}
+.if9-side{padding:12px;height:max-content;position:sticky;top:16px}
+.if9-tab{display:block;width:100%;text-align:left;border:0;background:transparent;color:#d4d4d8;padding:12px;border-radius:10px;font-weight:800;cursor:pointer;margin-bottom:4px}
+.if9-tab:hover,.if9-tab.active{background:#27272a;color:#facc15}
+.if9-panel{padding:18px}
+.if9-section{display:none}.if9-section.active{display:block}
+.if9-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-bottom:18px}
+.if9-stat{padding:16px}.if9-stat small{color:#a1a1aa;display:block}.if9-stat b{font-size:28px;display:block;margin-top:4px}
+.if9-toolbar{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+.if9-input,.if9-select,.if9-textarea{width:100%;background:#18181b;border:1px solid #3f3f46;color:#fafafa;border-radius:10px;padding:11px;outline:none}
+.if9-textarea{min-height:100px;resize:vertical}
+.if9-formgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.if9-formgrid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.if9-label{font-size:12px;color:#a1a1aa;font-weight:800;text-transform:uppercase;letter-spacing:.08em;margin-bottom:5px;display:block}
+.if9-btn{border:1px solid #3f3f46;background:#27272a;color:#fff;border-radius:10px;padding:10px 14px;font-weight:900;cursor:pointer}
+.if9-btn.primary{background:#facc15;color:#111;border-color:#facc15}
+.if9-btn.danger{color:#fecaca;border-color:#7f1d1d}
+.if9-table{width:100%;border-collapse:collapse;margin-top:12px}.if9-table th,.if9-table td{padding:11px 8px;border-bottom:1px solid #27272a;text-align:left;vertical-align:top}.if9-table th{color:#a1a1aa;font-size:12px;text-transform:uppercase}
+.if9-badge{display:inline-block;padding:4px 8px;border-radius:999px;background:#27272a;color:#facc15;font-size:12px;font-weight:900}
+.if9-actions{display:flex;gap:7px;flex-wrap:wrap}
+.if9-card{padding:15px;margin-top:12px}
+.if9-note{padding:12px;border:1px dashed #52525b;border-radius:10px;color:#d4d4d8;background:#18181b}
+.if9-login{max-width:480px;margin:70px auto;background:#111113;border:1px solid #2f2f35;border-radius:20px;padding:24px}
+@media(max-width:900px){.if9-grid{grid-template-columns:1fr}.if9-side{position:static}.if9-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.if9-formgrid,.if9-formgrid.three{grid-template-columns:1fr}.if9-table{display:block;overflow:auto;white-space:nowrap}}
+</style>
+
+<script>window.addEventListener('load',function(){if(window.IF9){/* admin route is available */}});</script>
+
+<script id="IRONFORGE_PRODUCTION_API_BRIDGE">
+/*
+ Production API bridge.
+ The UI can call IFAPI.* instead of localStorage when deployed with this backend.
+*/
+window.IFAPI = (function(){
+  const API_BASE = window.IRONFORGE_API_BASE || '/api';
+  let access = sessionStorage.getItem('if_access') || '';
+  let refresh = sessionStorage.getItem('if_refresh') || '';
+
+  async function request(path, options={}){
+    const headers = Object.assign({'Content-Type':'application/json'}, options.headers||{});
+    if(access) headers.Authorization='Bearer '+access;
+    let res = await fetch(API_BASE+path, Object.assign({},options,{headers}));
+    if(res.status===401 && refresh){
+      const rr=await fetch(API_BASE+'/auth/refresh/',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({refresh})});
+      if(rr.ok){
+        const j=await rr.json(); access=j.access; sessionStorage.setItem('if_access',access);
+        headers.Authorization='Bearer '+access;
+        res=await fetch(API_BASE+path,Object.assign({},options,{headers}));
+      }
+    }
+    const text=await res.text();
+    let data={}; try{data=text?JSON.parse(text):{}}catch(e){data={raw:text}}
+    if(!res.ok) throw new Error(data.detail||'API request failed');
+    return data;
+  }
+  return {
+    async login(username,password){const j=await request('/auth/login/',{method:'POST',body:JSON.stringify({username,password})});access=j.access;refresh=j.refresh;sessionStorage.setItem('if_access',access);sessionStorage.setItem('if_refresh',refresh);return j},
+    async register(payload){const j=await request('/auth/register/',{method:'POST',body:JSON.stringify(payload)});access=j.access;refresh=j.refresh;sessionStorage.setItem('if_access',access);sessionStorage.setItem('if_refresh',refresh);return j},
+    me:()=>request('/me/'),
+    profile:(payload)=>request('/me/profile/',payload?{method:'PATCH',body:JSON.stringify(payload)}:{}),
+    coaches:()=>request('/public/coaches/'),
+    plans:()=>request('/public/plans/'),
+    coachRequest:(payload)=>request('/coach-requests/',{method:'POST',body:JSON.stringify(payload)}),
+    createOrder:(plan,utr,payment_note)=>request('/orders/',{method:'POST',body:JSON.stringify({plan,utr,payment_note})}),
+    manualPayment:(plan,name,email,transaction_id,coach)=>request('/public/manual-payment/',{method:'POST',body:JSON.stringify({plan,name,email,transaction_id,coach})}),
+    orders:()=>request('/orders/'),
+    paymentSettings:()=>request('/public/payment-settings/'),
+    siteContent:()=>request('/public/site-content/')
+  };
+})();
+</script>
+<!-- IRONFORGE MANUAL UPI PAYMENT UI -->
+<style id="IRONFORGE_MANUAL_PAYMENT_STYLE">
+.ifpay-overlay{position:fixed;inset:0;background:rgba(0,0,0,.78);backdrop-filter:blur(10px);z-index:999;display:none;align-items:center;justify-content:center;padding:14px}
+.ifpay-modal{width:min(560px,100%);max-height:92vh;overflow:auto;background:#101012;border:1px solid #3f3f46;border-radius:20px;padding:22px;box-shadow:0 30px 90px #000}
+.ifpay-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.ifpay-close{border:1px solid #3f3f46;background:#18181b;color:#fff;border-radius:9px;padding:8px 11px}.ifpay-amount{font-size:38px;font-weight:950;color:#facc15;margin:10px 0}.ifpay-upi{display:flex;gap:8px;align-items:center;background:#09090b;border:1px solid #3f3f46;border-radius:12px;padding:12px}.ifpay-upi code{flex:1;overflow:hidden;text-overflow:ellipsis}.ifpay-qr{display:block;max-width:230px;width:100%;margin:16px auto;border-radius:12px;background:#fff;padding:8px}.ifpay-note{font-size:12px;color:#a1a1aa;line-height:1.55}.ifpay-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:14px}.ifpay-actions .btn{flex:1;min-width:150px}.ifpay-status{margin-top:12px}.ifpay-login{border-top:1px solid #27272a;margin-top:18px;padding-top:18px}.ifpay-switch{background:none;border:0;color:#facc15;padding:0;font-weight:800}.ifpay-hidden{display:none!important}
+</style>
+<div id="ifPayOverlay" class="ifpay-overlay" onclick="if(event.target===this)IFPAY.close()">
+  <div class="ifpay-modal">
+    <div class="ifpay-head"><div><div class="eyebrow">SECURE MANUAL PAYMENT</div><h2 id="ifPayTitle">Choose your plan</h2></div><button class="ifpay-close" onclick="IFPAY.close()">✕</button></div>
+    <div id="ifPayBody"></div>
+  </div>
+</div>
+<script id="IRONFORGE_MANUAL_PAYMENT_SCRIPT">
+(function(){
+  const $=id=>document.getElementById(id);
+  let selected={name:'',price:0,id:null,period:''}, settings={};
+  function money(v){return '₹'+Number(v||0).toLocaleString('en-IN')}
+  async function loadSettings(){
+    try{settings=await IFAPI.paymentSettings();}catch(e){settings={enabled:true,upi_id:'nigamhimanshu80-2@oksbi',account_name:'Himanshu Nigam',qr_image_url:'/static/assets/himanshu_upi_qr.jpg',instructions:'Pay the exact amount, then enter the UTR/transaction ID.'};}
+  }
+  async function open(plan,price){
+    selected={name:plan,price:Number(String(price).replace(/[^0-9.]/g,''))};
+    $('ifPayOverlay').style.display='flex';
+    $('ifPayTitle').textContent=plan+' Plan';
+    $('ifPayBody').innerHTML='<div class="output">Loading payment details…</div>';
+    await loadSettings(); render();
+  }
+  function render(){
+    const upi=settings.upi_id||'YOUR-UPI-ID@upi', name=settings.account_name||'IRONFORGE INDIA', qr=settings.qr_image_url||'';
+    const upiLink='upi://pay?pa='+encodeURIComponent(upi)+'&pn='+encodeURIComponent(name)+'&am='+encodeURIComponent(selected.price.toFixed(2))+'&cu=INR';
+    $('ifPayBody').innerHTML=`
+      <div class="ifpay-amount">${money(selected.price)}</div>
+      <p class="muted">Pay directly to the IRONFORGE account using UPI. No Razorpay or payment gateway is required.</p>
+      <div class="ifpay-upi"><code id="ifPayUpi">${esc(upi)}</code><button class="btn" onclick="IFPAY.copyUpi()">Copy</button></div>
+      ${qr?`<img class="ifpay-qr" src="${esc(qr)}" alt="IRONFORGE UPI QR">`:''}
+      <div class="ifpay-actions"><a class="btn primary" href="${upiLink}">Open UPI App</a><button class="btn" onclick="IFPAY.showSubmit()">I Have Paid</button></div>
+      <p class="ifpay-note">${esc(settings.instructions||'After payment, enter your UTR/transaction ID. Your plan is activated after admin verification.')}</p>
+      <div id="ifPaySubmit" class="ifpay-login ifpay-hidden"></div>`;
+  }
+  function showSubmit(){
+    $('ifPaySubmit').classList.remove('ifpay-hidden');
+    $('ifPaySubmit').innerHTML=`
+      <h3>I Have Paid</h3>
+      <p class="muted small">Just enter your name, email and the transaction ID from your UPI app. No account or password is required.</p>
+      <div class="field"><label>Your Name</label><input id="ifPayName" autocomplete="name" placeholder="Enter your name"></div>
+      <div class="field"><label>Email Address</label><input id="ifPayEmail" type="email" autocomplete="email" placeholder="you@example.com"></div>
+      <div class="field"><label>UTR / Transaction ID</label><input id="ifPayUtr" placeholder="e.g. 123456789012" required></div>
+      <div class="ifpay-actions"><button class="btn primary" onclick="IFPAY.submitGuestPayment()">Submit Payment</button></div>
+      <div id="ifPayStatus" class="ifpay-status"></div>`;
+  }
+  async function submitGuestPayment(){
+    try{
+      const name=$('ifPayName').value.trim(), email=$('ifPayEmail').value.trim(), utr=$('ifPayUtr').value.trim();
+      if(!name) throw new Error('Please enter your name.');
+      if(!email) throw new Error('Please enter your email address.');
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) throw new Error('Please enter a valid email address.');
+      if(!utr) throw new Error('Please enter the UTR / transaction ID.');
+      const plans=await IFAPI.plans();
+      const match=(plans.results||plans).find(p=>p.name===selected.name);
+      if(!match) throw new Error('This plan is not available right now. Please try again later.');
+      const selectedCoach=JSON.parse(localStorage.getItem('ironforgeSelectedCoach')||'null');
+      const result=await IFAPI.manualPayment(match.id,name,email,utr,selectedCoach?.id||null);
+      localStorage.setItem('ironforgePendingPayment',JSON.stringify({paymentId:result.payment_id,plan:selected.name,amount:selected.price,utr}));
+      $('ifPayStatus').innerHTML='<div class="notice success"><b>Payment details submitted successfully.</b><br>We will verify your payment and confirm your plan. No account creation is required.</div>';
+    }catch(e){$('ifPayStatus').innerHTML='<div class="notice">'+esc(e.message)+'</div>';}
+  }
+  function close(){$('ifPayOverlay').style.display='none'}
+  async function copyUpi(){try{await navigator.clipboard.writeText(settings.upi_id||'');alert('UPI ID copied.');}catch(e){alert('UPI ID: '+(settings.upi_id||''));}}
+  function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]))}
+  window.IFPAY={open,close,showSubmit,submitGuestPayment,copyUpi};
+})();
+</script>
+
+
+<script id="IRONFORGE_LIVE_ADMIN_SYNC">
+(function(){
+  const escLive=s=>String(s==null?'':s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[m]));
+  async function syncLive(){
+    if(!window.IFAPI)return;
+    try{
+      const [plans,coaches,content]=await Promise.all([IFAPI.plans(),IFAPI.coaches(),IFAPI.siteContent()]);
+      const ps=plans.results||plans, cs=coaches.results||coaches;
+      const grid=document.querySelector('#pricing .grid');
+      if(grid&&ps.length){
+        grid.innerHTML=ps.map(p=>`<div class="card price-card ${p.name==='Elite'?'elite':''}"><div class="eyebrow">${p.name==='Elite'?'PREMIUM COACHING':''}</div><h3>${escLive(p.name)}</h3><div class="price">₹${Number(p.price).toLocaleString('en-IN')}<small>${p.period==='month'?'/month':' one-time'}</small></div><ul class="muted" style="padding-left:18px">${(p.features||[]).map(f=>`<li>${escLive(f)}</li>`).join('')}</ul><div class="spacer"></div><button class="btn primary" onclick="selectPlan('${String(p.name).replace(/'/g,"\\'")}','₹${p.price}${p.period==='month'?'/month':''}')">Choose ${escLive(p.name)}</button></div>`).join('');
+      }
+      if(Array.isArray(cs)&&cs.length){
+        window.IRONFORGE_LIVE_COACHES=cs.map(c=>({name:(c.user?.first_name||c.user?.username||'')+' '+(c.user?.last_name||''),focus:c.focus,tags:c.tags||[],bio:c.bio||'',initials:c.initials||'',active:c.active!==false,whatsapp_number:c.whatsapp_number||'',id:c.id}));
+        if(window.IF8){window.IF8.getCoaches=()=>window.IRONFORGE_LIVE_COACHES.filter(c=>c.active!==false);}
+      }
+      if(content&&Object.keys(content).length){
+        if(content.announcement)document.getElementById('siteAnnouncement').textContent=content.announcement;
+        if(content.heroTitle)document.getElementById('siteHeroTitle').textContent=content.heroTitle;
+        if(content.heroDescription)document.getElementById('siteHeroDescription').textContent=content.heroDescription;
+        if(content.footer)document.getElementById('siteFooter').textContent=content.footer;
+        const ea=document.getElementById('earlyAccessBtn'); if(ea&&content.earlyAccess){ea.href=content.earlyAccess;ea.style.display='inline-block';}
+        if(Array.isArray(content.features)&&content.features.length){
+          const fg=document.getElementById('homeFeaturesGrid'); if(fg) fg.innerHTML=content.features.filter(x=>x.active!==false).map(x=>`<div class="card wide-card"><div class="feature-icon">${escLive(x.icon||'⭐')}</div><h3>${escLive(x.title)}</h3><p class="muted">${escLive(x.description)}</p></div>`).join('');
+        }
+      }
+    }catch(e){console.warn('Live admin sync unavailable; using built-in website defaults.',e)}
+  }
+  window.addEventListener('load',()=>setTimeout(syncLive,250));
+})();
+</script>
+</body></html>
